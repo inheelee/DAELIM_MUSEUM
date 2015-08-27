@@ -3,12 +3,12 @@
 
 /* 초기화 */
 body {
-	margin: 0;
-	font:normal 12px '나눔고딕',nanumgothic,'돋움',dotum,AppleGothic, Arial, Verdana, sans-serif;
+	margin:      0;
+	font:        normal 12px '나눔고딕',nanumgothic,'돋움',dotum,AppleGothic, Arial, Verdana, sans-serif;
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
-* {margin: 0; padding: 0;}
+* { margin: 0; padding: 0; }
 
 li {
 	list-style: none;
@@ -21,33 +21,32 @@ a {
 
 /* common */
 section {
-	margin: 0 auto;
+	width:   1184px;
+	margin:  0 auto;
 	padding: 50px 0;
-	width: 1184px;
-	background: #E2E4E4;
 }
 
 h2 {
 	margin-bottom: 20px;
-	font-size: 26px;
-	font-weight: 300;
-	color: #151515;
+	font-size:     26px;
+	font-weight:   300;
+	color:         #151515;
 }
 
 h3 {
-	font-size: 18px;
+	font-size:   18px;
 	font-weight: 700;
 }
 
 strong {
-	font-size: 12px;
-	color: #909090;
+	font-size: 13px;
+	color:     #909090;
 }
 
 .clearfix::after {
 	content: '';
 	display: block;
-	clear:both;
+	clear:   both;
 }
 
 .a11y-hidden {
@@ -71,59 +70,124 @@ strong {
 	margin:   0;
 }
 
+.more {
+	position:      absolute;
+	top:           20px;
+	right:         0px;
+	padding-right: 10px;
+	font-size:     13px;
+}
+
+.more::after {
+	content:    '';
+	width:      10px;
+	height:     12px;
+	display:    inline-block;
+	background: url('../image/icon_common.png') no-repeat -176px -117px;
+}
 
 /* section */
 section > div {
-	float:left;
+	float: left;
 }
 
-/* museum_shop */
+/* section > museum_shop */
 .museum_shop {
-	width: 592px;
-	height: 320px;
+	position: relative;
+	width:    592px;
+	height:   320px;
 }
 
-.museum_shop .controls {
-	position:absolute;
-	top: 0;
-	left: 0;
+.controls {
+	position: absolute;
+	z-index:  100;
+	bottom:   60px;
+	left:     105px;
+}
+.controls a {
+	display:             inline-block;
+	width:               10px;
+	height:              12px;
+	text-indent:         -99999px;
+	background-image:    url('../image/btn_common.png');
+	background-repeat:   no-repeat;
+	background-position: -100px -99px;
+}
+.controls a.play {
+	background-position: -50px -100px;
+}
+
+.controls a.pause {
+	background-position: -75px -100px;
+}
+
+.controls a.shop_on {
+	background-position: -125px -99px;
+}
+
+.controls a + a {
+	margin-left: 12px;
 }
 
 .museum_shop ul li {
 	position: relative;
-	display: none;
+	display:  none;
 }
 
-.museum_shop ul li.on {
+.museum_shop ul li.shop_desc_on {
 	display: block;
 }
 
 .museum_shop .description {
-	position: absolute;
-	top: 45px;
-	left: 28px;
-	padding: 20px 0 0 10px;
-	background: rgba(255, 255, 255, 0.5);
-	width: 240px;
-	height: 230px;
+	position:   absolute;
+	width:      225px;
+	height:     213px;
+	bottom:     45px;
+	left:       28px;
+	padding:    17px 0 0 15px;
+	background: rgba(255, 255, 255, 0.7);
 }
 
 .museum_shop .description h3 {
-	font-size: 23px;
-	color: #222;
-	font-weight: bold;
+	margin-bottom: 8px;
+	font-size:     25px;
+	font-weight:   bold;
+	color:         #222222;
+}
+
+.museum_shop .description strong {
+	color: #595959;
+}
+
+.museum_shop .description strong::after {
+	content:       '';
+	display:       block;
+	width:         20px;
+	height:        2px;
+	border-bottom: 1px solid #0c1512;
 }
 
 .museum_shop .description h4 {
-	font-size: 14px;
+	margin-top:  28px;
+	font-size:   14px;
 	font-weight: 300;
-	font-color: #6e6e6e;
+	color:       #151515;
 }
 
 .museum_shop .description p {
-	font-size: 12px;
+	margin:         4px 0 6px;
+	font-size:      12px;
+	letter-spacing: -1px;
+	color:          #595959;
 }
 
+.museum_shop .description em {
+	font-size:  14px;
+	font-style: normal;
+	color:      #333;
+}
+
+/* section > .news */
 .news, .callendar {
 	width: 296px;
 }
@@ -133,78 +197,152 @@ section > div {
 }
 
 .news > div {
-	padding-left: 24px;
+	padding-left:  24px;
 	padding-right: 24px;
-	background: #f0f0f0;
+	background:    #f0f0f0;
 }
 
 .news h3 {
-	font-size: 16px;
 	margin-bottom: 11px;
+	font-size:     16px;
 }
 
 .news p {
-	font-size: 14px;
 	margin-bottom: 7px;
-	color: #373737;
+	font-size:     14px;
+	color:         #373737;
 }
 
 .news span {
 	font-size: 13px;
-	color: #909090;
+	color:     #909090;
 }
-
-.news .more {
-	position:absolute;
-	top: 20px;
-	right: 15px;
-	font-size:12px;
-}
-
-/*.news .more::after {
-	content:'';
-	display: inline-block;
-	width: 5px;
-	height: 10px;
-	background: url('../images/icon_common.png') no-repeat -180px -120px;
-}*/
 
 .notice {
-	position: relative;
+	position:    relative;
 	padding-top: 22px;
-	height: 173px;
+	height:      173px;
 }
 
 .notice li + li {
-	margin-top: 10px;
+	margin-top:  10px;
 	padding-top: 10px;
-	border-top:1px solid #d8d8d8;
+	border-top:  1px solid #d8d8d8;
 }
 
 .event {
 	position: relative;
+	height:      102px;
 	padding-top: 22px;
-	height: 102px;
-	border-top: 1px solid #fff;
+	border-top:  1px solid #fefefe;
 }
 
-/* callendar */
+/* section > .callendar */
+.callendar {
+	background: #f8f8f8;
+}
 .callendar .programs {
-	padding: 10px 14px 0;
-	height: 107px;
-	border: 1px solid #3a3a3a;
-	background: #393939;
-	color: #ccc;
+	position:   relative;
+	height:     117px;
+	padding:    10px 14px 0;
+	background: #222222;
+	/*border:   1px solid #3a3a3a;*/
+	color:      #ccc;
+}
+
+.programs .more {
+	top:   12px;
+	color: #ffffff;
+}
+.programs .more::after {
+	background: url('../image/icon_common.png') no-repeat -186px -117px;
 }
 
 .callendar h3 {
-	font-size: 13px;
+	font-size:   12px;
+	font-weight: 300;
 }
 
 .callendar p {
-	color: #fff;
+	margin-bottom:  10px;
+	padding-bottom: 9px;
+	border-bottom:  1px solid #3a3a3a;
+	text-align:     center;
+	font-size:      17px;
+	font-weight:    700;
+	color:          #fff;
+}
+
+.programs ul li {
+	text-align: center;
+}
+.programs ul li a {
+	color:     #c8c8c8;
+	font-size: 13px;
+
 }
 
 .callendar table {
-	margin: 0 auto;
+	width:          274px;
+	height:         171px;
+	margin:         0 auto;
+	padding-top:    10px;
+	padding-bottom: 6px;
+	text-align:     center;
+	font-family:    'Nanum Gothic';
+	font-size:      10px;
+}
+
+.callendar table th {
+	padding: 5px 0;
+}
+
+.callendar table tbody {
+	font-size: 14px;
+}
+
+.callendar table td {
+	position:  relative;
+	padding:   5px 0;
+	font-size: 11px;
+}
+
+.callendar table td.today {
+	color: #fff;
+}
+
+.callendar table td.ev::after {
+	content:     '';
+	position:    absolute;
+	display:     block;
+	width:       5px;
+	height:      5px;
+	margin-left: -2px;
+	bottom:      -2px;
+	left:        50%;
+	background:  url('../image/bg_calendar.png') no-repeat 0 -190px;
+}
+
+.callendar table td.check::after {
+	content:     '';
+	position:    absolute;
+	display:     block;
+	width:       28px;
+	height:      28px;
+	margin-left: -14px;
+	bottom:      -3px;
+	left:        50%;
+	background:  url('../image/bg_calendar.png') no-repeat 0 -120px;
+}
+
+.callendar table td.today::before {
+	content:     '';
+	position:    absolute;
+	display:     block;
+	width:       28px;
+	height:      28px;
+	margin-left: -14px;
+	bottom:      -3px;
+	left:        50%;
+	background:  url('../image/bg_calendar.png') no-repeat 0 -160px;
 }
