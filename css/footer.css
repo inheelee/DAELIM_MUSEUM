@@ -70,7 +70,7 @@ ul {
 	padding-bottom: 50px;
 }
 .footer_top li {
-	width: 380px;
+	width: 340px;
 	float: left;
 }
 .footer_top li span{
@@ -95,4 +95,7 @@ ul {
 }
 .footer_nav li {
 	float: left;
+}
+.fa {
+	color: #909090;
 }
