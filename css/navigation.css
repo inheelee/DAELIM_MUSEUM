@@ -1,0 +1,58 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{margin: 0;padding: 0;}
+li{list-style:none;}
+a{text-decoration: none;}
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.header_top{
+	width: 100%;
+	background-color:#373737;}
+.inner{
+	width: 938px;
+	margin: 0 auto;	
+	overflow: hidden;}
+.inner .link-menu {
+	float: left;
+}
+.inner .link-menu a{
+	display: inline-block;
+	padding: 5px 30px;
+	color: white;
+}
+.inner .link-menu a:first-child{
+	background-color: white;
+	color:black;
+}
+
+#lnb {
+	float: right; 
+	overflow: hidden;}
+
+#lnb > ul > li{float: left;}
+#lnb > ul > li a{
+	color:white;
+}
+#lnb > ul > li+li{padding-left: 32px;}
+#lnb > ul:after{clear:both;}
+#gnb{
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1184px;
+	}
+#gnb > h1{
+	float: left; 
+	margin:20px 65px 20px;
+}
+#gnb > .show-menu {float: left;}
+#gnb > .show-menu > li {
+	float: left;
+	padding-top:30px; 
+	padding-bottom:35px;}
+#gnb > .show-menu > li a{
+	font-size: 
+	font-weight: 700;}
+#gnb > .show-menu > li+li {margin-left: 60px;}
+
+.hide-menu{display: none;} 
+
