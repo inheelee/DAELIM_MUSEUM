@@ -3,13 +3,14 @@
 li{list-style:none;}
 a{text-decoration: none;}
 body{
-	font-family: 'Nanum Gothic', sans-serif;
+	font:normal 12px '나눔고딕',nanumgothic,'돋움',dotum,AppleGothic, Arial, Verdana, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .header_top{
 	width: 100%;
 	background-color:#373737;}
 .inner{
-	width: 938px;
+	width: 1184px;
 	margin: 0 auto;	
 	overflow: hidden;}
 .inner .link-menu {
@@ -29,30 +30,57 @@ body{
 	float: right; 
 	overflow: hidden;}
 
-#lnb > ul > li{float: left;}
+#lnb > ul > li{float: left;margin-top: 5px;}
 #lnb > ul > li a{
 	color:white;
 }
 #lnb > ul > li+li{padding-left: 32px;}
 #lnb > ul:after{clear:both;}
+.gnb_header_slide_menu{
+
+}
+.header_slide_menu{
+	width: 100%;
+	background-color:#fff;
+}
 #gnb{
+	position: relative;
 	overflow: hidden;
 	margin: 0 auto;
 	width: 1184px;
 	}
 #gnb > h1{
 	float: left; 
-	margin:20px 65px 20px;
+	margin:20px 65px 20px 0;
 }
-#gnb > .show-menu {float: left;}
-#gnb > .show-menu > li {
+#gnb > h1 > a  > img{
+	width: 139px;
+	height: 16px;
+}
+#gnb > .show_menu {float: left;overflow: hidden;}
+#gnb > .show_menu > li {
+	/* border: 1px solid red; */
 	float: left;
 	padding-top:30px; 
-	padding-bottom:35px;}
-#gnb > .show-menu > li a{
-	font-size: 
-	font-weight: 700;}
-#gnb > .show-menu > li+li {margin-left: 60px;}
+	}
+#gnb > .show_menu > li a{
+	line-height: 1.7em;
+	font-size: 12px;
+	}
+#gnb > .show_menu > li+li {margin-left: 60px;}
+/* #gnb > .show_menu > li > ul{border: 1px solid blue;} */
+.about_museum {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.about_museum a img { 
+	width: 154px;
+	height: 87px;
+}
+.about_museum a span { 
+	font-weight: 700;
+}
 
-.hide-menu{display: none;} 
+.hide-menu{border-top:1px solid }
 
