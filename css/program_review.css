@@ -53,6 +53,7 @@ a:hover, a:focus, a:active {
 .program_review {
 	overflow: hidden;
 	background-color: #f8f8f8;
+	width: 1184px;
 	padding-top: 50px;
 	padding-left: 42px;
 	padding-right: 42px;
