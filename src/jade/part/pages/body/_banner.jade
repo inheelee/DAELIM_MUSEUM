@@ -1,0 +1,52 @@
+html
+  body
+    #visual
+      .slide_controller
+        button(type='button')
+          span.acc-hidden 재생/일시정지
+        a.active(href='')
+          span.acc-hidden 첫번째 배너 보기
+        a(href='')
+          span.acc-hidden 두번째 배너 보기
+        a(href='')
+          span.acc-hidden 세번째 배너 보기
+      ul.slide_banner
+        li.banner01
+          a(href='#')
+        li.banner02
+          a(href='#')
+        li.banner03
+          a(href='#')
+      .content_wide
+        .content_inner
+          .member
+            ul
+              li.member01
+                a.mb_cont(href='#')
+                  strong.title ONLINE MEMBER
+                  span 온라인 회원만의 특별한 혜택! 전시 20% 할인!
+                a(href='#') 회원가입 하기 &gt;
+              li.member02
+                a.mb_cont(href='#')
+                  strong.title MOBILE APP
+                  span 모바일투어로 전시관람을 더 재미있게!
+                a(href='#') 모바일로 미술관 즐기기 &gt;
+              li.member03
+                a.mb_cont(href='#')
+                  strong.title D MEMBERSHIP
+                  span 다채롭게 즐기는 전시 3회+공연 or 강연+커피
+                a(href='#') 자세한 혜택보기 &gt;
+          .view_info
+            .today_time
+              img(src='img/todays_time.png', alt='오늘의 관람시간은 오전10시부터 오후6시까지 입니다.')
+            .view_detail
+              | 화-일요일 | 10:00AM - 6:00PM
+              br
+              | 목,토요일 | 10:00AM - 8:00PM
+              br
+              | 전시종료 30분전 매표 마감
+              br
+              | 매주 월요일 휴관, 설/추석 연휴 휴관
+            .link
+              a(href='#') 관람 안내 &gt;
+              a(href='#') 오시는 길 &gt;

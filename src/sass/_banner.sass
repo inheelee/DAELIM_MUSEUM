@@ -1,0 +1,170 @@
+// VISUAL
+
+#visual
+  width: 100%
+  height: 680px
+  position: relative
+  overflow: hidden
+
+.slide_banner
+  width: 4047px
+  overflow: hidden
+  li
+    float: left
+    width: 1349px
+    height: 680px
+
+.banner01 a
+  display: block
+  width: 100%
+  height: 100%
+  background: url('../img/slide_banner_01.jpg') no-repeat center 0
+
+.banner02 a
+  display: block
+  width: 100%
+  height: 100%
+  background: url('../img/slide_banner_02.jpg') no-repeat center 0
+
+.banner03 a
+  display: block
+  width: 100%
+  height: 100%
+  background: url('../img/slide_banner_03.jpg') no-repeat center 0
+
+.slide_controller
+  position: absolute
+  left: 0
+  bottom: 220px
+  width: 100%
+  text-align: center
+  z-index: 5
+  button
+    display: inline-block
+    padding-left: 10px
+    background: url('../img/btn_common.png') no-repeat -50px -80px
+    width: 10px
+    height: 13px
+    border: none
+    vertical-align: middle
+    cursor: pointer
+  a
+    display: inline-block
+    width: 11px
+    height: 12px
+    background: url('../img/btn_common.png') no-repeat -99px -80px
+    margin: 0 4px
+    vertical-align: middle
+    &.active
+      background-position: -124px -80px
+
+.content_wide
+  overflow: hidden
+  background-color: rgba(50, 50, 50, 0.9)
+  width: 100%
+  position: absolute
+  left: 0
+  bottom: 0
+
+.content_inner
+  width: 1184px
+  margin: 0 auto
+  overflow: hidden
+
+.member
+  float: left
+  width: 887px
+  ul
+    > li
+      position: relative
+      float: left
+      width: 33.33%
+      text-align: center
+      &:after
+        content: ""
+        background: url('../img/icon_main.png') no-repeat 0 0
+        display: block
+        position: absolute
+        left: 50%
+        top: 20px
+        width: 74px
+        height: 45px
+        margin-left: -37px
+    li
+      &.member02:after
+        background-position: -74px 0
+        height: 64px
+        top: 7px
+      &.member03:after
+        background-position: -158px 0
+        top: 20px
+    > li > a
+      color: #fff
+      display: block
+  .mb_cont
+    padding: 90px 0 12px 0
+    + a
+      border: 1px solid #CBCBCB
+      display: inline-block
+      padding: 7px
+      background-color: #222
+      &:hover
+        border-color: #fff
+        background-color: #000
+        box-shadow: 2px 2px 0 #3e3e3e
+  .title
+    display: block
+    margin: 0 auto 3px
+
+.view_info
+  position: relative
+  float: right
+  width: 297px
+  height: 199px
+  background-color: #1D1D1D
+  color: #fff
+  .today_time
+    padding: 18px 0 0 80px
+    height: 45px
+    margin-bottom: 5px
+    &:before
+      display: block
+      content: ""
+      background: url('../img/icon_main.png') no-repeat -50px -80px
+      width: 42px
+      height: 42px
+      position: absolute
+      top: 16px
+      left: 23px
+  .view_detail
+    padding: 0 24px
+    line-height: 21px
+    opacity: 0.8
+  .link
+    position: absolute
+    left: 24px
+    bottom: 24px
+    a
+      display: inline-block
+      color: #fff
+      margin-right: 23px
+
+//* 접근성을 고려한 보이지 않아야 할 텍스트
+
+.acc-hidden
+  overflow: hidden
+  position: absolute
+  clip: rect(0 0 0 0)
+  clip: rect(0, 0, 0, 0)
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  &.focusable:focus
+    overflow: visible
+    position: static
+    clip: auto
+    width: auto
+    height: auto
+    margin: 0
