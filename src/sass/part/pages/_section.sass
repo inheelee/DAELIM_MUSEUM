@@ -1,0 +1,291 @@
+/* 초기화
+
+html
+  font-size: 100%
+
+body
+  margin: 0
+  padding: 0
+  line-height: 1.3
+  font: normal 12px '나눔고딕',nanumgothic,'돋움',dotum,AppleGothic, Arial, Verdana, sans-serif
+  font-family: 'Roboto Condensed', sans-serif
+  color: #000
+  background-color: #fff
+
+br
+  letter-spacing: 0
+
+h1, h2, h3, h4, h5, h6
+  font-size: 1em
+
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption
+  margin: 0
+  padding: 0
+
+ul, ol
+  list-style: none
+
+img
+  border: 0
+
+table
+  width: 100%
+  border-collapse: collapse
+
+a
+  &:link, &:visited
+    color: #444547
+    text-decoration: none
+  &:hover, &:focus, &:active
+    color: #55aaea
+    text-decoration: none
+
+/* common
+
+.clearfix::after
+  content: ''
+  display: block
+  clear: both
+
+.a11y-hidden
+  overflow: hidden
+  position: absolute
+  clip: rect(0 0 0 0)
+  clip: rect(0, 0, 0, 0)
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  border: 0
+  &.focusable
+    overflow: visible
+    position: static
+    clip: auto
+    width: auto
+    height: auto
+    margin: 0
+
+section
+  width: 1184px
+  margin: 0 auto
+  padding: 50px 0
+
+h2
+  margin-bottom: 20px
+  font-size: 26px
+  font-weight: 300
+  color: #151515
+
+h3
+  font-size: 18px
+  font-weight: 700
+
+strong
+  font-size: 12px
+  color: #909090
+
+.more
+  position: absolute
+  top: 20px
+  right: 0px
+  padding-right: 10px
+  font-size: 13px
+  &::after
+    content: ''
+    width: 10px
+    height: 12px
+    display: inline-block
+    background: url('../image/icon_common.png') no-repeat -176px -117px
+
+/* section
+
+section > div
+  float: left
+
+/* section > museum_shop
+
+.museum_shop
+  position: relative
+  width: 592px
+  height: 320px
+
+.controls
+  position: absolute
+  z-index: 100
+  bottom: 60px
+  left: 105px
+  a
+    display: inline-block
+    width: 10px
+    height: 12px
+    text-indent: -99999px
+    background-image: url('../image/btn_common.png')
+    background-repeat: no-repeat
+    background-position: -100px -99px
+    &.play
+      background-position: -50px -100px
+    &.pause
+      background-position: -75px -100px
+    &.shop_on
+      background-position: -125px -99px
+    + a
+      margin-left: 12px
+
+.museum_shop
+  ul li
+    position: relative
+    display: none
+    &.shop_desc_on
+      display: block
+  .description
+    position: absolute
+    width: 225px
+    height: 213px
+    bottom: 45px
+    left: 28px
+    padding: 17px 0 0 15px
+    background: rgba(255, 255, 255, 0.7)
+    h3
+      margin-bottom: 8px
+      font-size: 25px
+      font-weight: bold
+      color: #222222
+    strong
+      color: #595959
+      &::after
+        content: ''
+        display: block
+        width: 20px
+        height: 2px
+        border-bottom: 1px solid #0c1512
+    h4
+      margin-top: 28px
+      font-size: 14px
+      font-weight: 300
+      color: #151515
+    p
+      margin: 4px 0 6px
+      font-size: 12px
+      letter-spacing: -1px
+      color: #595959
+    em
+      font-size: 14px
+      font-style: normal
+      color: #333
+
+/* section > .news
+
+.news, .callendar
+  width: 296px
+
+.news
+  background: #fff
+  > div
+    padding-left: 24px
+    padding-right: 24px
+    background: #f0f0f0
+  h3
+    margin-bottom: 11px
+    font-size: 16px
+  p
+    margin-bottom: 7px
+    font-size: 14px
+    color: #373737
+  span
+    font-size: 13px
+    color: #909090
+
+.notice
+  position: relative
+  padding-top: 22px
+  height: 173px
+  li + li
+    margin-top: 10px
+    padding-top: 10px
+    border-top: 1px solid #d8d8d8
+
+.event
+  position: relative
+  height: 102px
+  padding-top: 22px
+  border-top: 1px solid #fefefe
+
+/* section > .callendar
+
+.callendar
+  background: #f8f8f8
+
+.schedule
+  position: relative
+  height: 116px
+  padding: 10px 14px 0
+  background: #222222
+  /*border:   1px solid #3a3a3a;
+  color: #ccc
+  .more
+    top: 12px
+    color: #ffffff
+    &::after
+      background: url('../image/icon_common.png') no-repeat -186px -117px
+  h3
+    font-size: 12px
+    font-weight: 300
+  p
+    margin-bottom: 10px
+    padding-bottom: 9px
+    border-bottom: 1px solid #3a3a3a
+    text-align: center
+    font-size: 17px
+    font-weight: 700
+    color: #fff
+  ul li
+    text-align: center
+    a
+      color: #c8c8c8
+      font-size: 13px
+
+.callendar table
+  width: 266px
+  margin: 0 auto
+  text-align: center
+  font-family: 'Nanum Gothic'
+  font-size: 10px
+  th
+    width: 38px
+    padding: 15px 0 5px
+  td
+    position: relative
+    padding: 7px 0
+    font-size: 11px
+    &.today
+      color: #fff
+    &.ev::after
+      content: ''
+      position: absolute
+      display: block
+      width: 5px
+      height: 5px
+      margin-left: -2px
+      bottom: -1px
+      left: 50%
+      background: url('../image/bg_calendar.png') no-repeat 0 -190px
+    &.check::after
+      content: ''
+      position: absolute
+      display: block
+      width: 28px
+      height: 28px
+      margin-left: -14px
+      bottom: -2px
+      left: 50%
+      background: url('../image/bg_calendar.png') no-repeat 0 -120px
+    &.today::before
+      content: ''
+      position: absolute
+      display: block
+      width: 28px
+      height: 28px
+      margin-left: -14px
+      bottom: -3px
+      left: 50%
+      background: url('../image/bg_calendar.png') no-repeat 0 -160px
