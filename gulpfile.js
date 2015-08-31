@@ -9,6 +9,9 @@ var gulp = require('gulp'),
 	mq = require('gulp-combine-mq')
 	sourcemaps  = require('gulp-sourcemaps'),
 
+	imagemin = require('gulp-imagemin'),
+	pngquant = require('imagemin-pngquant'),
+
 	/* Browser server sync -------------------------------- */
 	browserSync = require('browser-sync'),
 	shell = require('gulp-shell'),
@@ -57,7 +60,8 @@ var config = {
 // 기본 업무 실행, jade sass 사용, Sass 엔진 선택 & 사용 , browserSync 사용
 gulp.task('default', [
 	'jade',
-	'sass'
+	'sass',
+	'image',
 ], function() {
 	browserSync(config.browserSync)
 	gulp.start('watch');
@@ -82,13 +86,24 @@ gulp.task('jade', function() {
 // 변경 업무: (sass|scss) → CSS
 gulp.task('sass', function() {
 	// gulp-ruby-sass 사용 시에는 디렉토리 명만 입력할 것!
-	return rubySass('src/sass/', config.ruby_sass)
+	return rubySass('src/sass', {'style': 'compact'})
 		.on('error', rubySass.logError)
 		.pipe( sourcemaps.write(config.ruby_sass_sourcemaps.dir, config.ruby_sass_sourcemaps.options) )
 		.pipe(mq())
 		.pipe( gulp.dest('dist/css') )
 		.pipe( filter('**/*.css') )
 		.pipe( reload({stream: true}) );
+});
+
+// 변경 업무: images 디렉토리 이동 및 최적화 수행
+gulp.task('image', function () {
+	gulp.src('image/**/*')
+		.pipe(imagemin({
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}],
+			use: [pngquant()]
+		}))
+		.pipe( gulp.dest('dist/image') );
 });
 
 gulp.task('clean', shell.task('rm -rf dist')); //clean 입력시 dist 폴더 제거
