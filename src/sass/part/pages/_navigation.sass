@@ -1,0 +1,110 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css)
+
+.header_top
+  width: 100%
+  background-color: #373737
+
+.inner
+  width: 1184px
+  margin: 0 auto
+  overflow: hidden
+  .link-menu
+    float: left
+    a
+      display: inline-block
+      padding: 8px 50px
+      color: #ccc
+      margin-top: 6px
+      &:first-child
+        border-radius: 2px 2px 0 0
+        background-color: white
+        color: black
+
+#lnb
+  float: right
+  overflow: hidden
+  > ul
+    > li
+      float: left
+      margin-top: 11px
+      a
+        font-size: 10px
+        color: #ccc
+      + li
+        padding-left: 32px
+    &:after
+      clear: both
+
+.gnb_header_slide_menu
+
+.header_slide_menu
+  width: 100%
+  background-color: #fff
+
+.gnb_header_slide_menu
+  position: relative
+
+.header_slide_menu
+  position: absolute
+  height: 306px
+  border-bottom: 1px solid #e9e9e9
+
+#gnb
+  position: relative
+  margin: 0 auto
+  width: 1184px
+  height: 80px
+  border-bottom: 1px solid #e9e9e9
+  >
+    h1
+      float: left
+      padding: 30px 65px 20px 0
+      > a > img
+        width: 208px
+        height: 21px
+    .show_menu
+      float: left
+      overflow: hidden
+      > li
+        color: black
+        font-weight: 700
+        float: left
+        padding-top: 30px
+        width: 140px
+        > a
+          line-height: 1.7em
+          font-size: 12px
+          padding-bottom: 59px
+          display: block
+    ul::after
+      position: absolute
+      top: 20px
+      right: 0
+      width: 40px
+      height: 40px
+      background: url('../image/menu_D.png') no-repeat
+      content: ''
+
+.hide_menu > li
+  line-height: 28px
+  a
+    color: #595959
+    font-weight: 300
+  > span
+    display: inline-block
+    background: url('../image/menu_plus_off.png') no-repeat
+    margin-left: 7px
+    text-indent: -9999px
+    width: 15px
+    height: 15px
+    vertical-align: text-bottom
+
+.about_museum
+  position: absolute
+  left: 0
+  top: 119px
+  a img
+    width: 227px
+    height: 128px
+  > a > p > strong
+    color: black
