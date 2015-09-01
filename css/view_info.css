@@ -1,16 +1,30 @@
 @charset "utf-8";
 
-.vi_wrap {margin: 0 auto; width: 1184px; background-color: #ddd;}
-.detail_menu {text-align: right; padding-top: 9px; height: 25px;}
+.vi_wrap {margin: 0 auto; width: 100%;}
+.detail_menu {width: 1184px; margin: 0 auto; text-align: right; padding-top: 9px; height: 25px;}
 .detail_menu a {margin-right: 5px;}
 .detail_menu span {text-decoration: underline;}
 
-.vi_banner {width: 100%; height: 240px; background: url('../image/view_info/banner_info.jpg')no-repeat center 0;}
-.vi_banner h1 {background: url('../image/view_info/txt_visit.png')no-repeat 0 0; width: 170px; height: 41px; border: 1px solid red;}
+.vi_banner {height: 240px; background: url('../image/banner_info.jpg')no-repeat center 0;}
+.vi_banner div {padding-top: 90px;}
+.vi_banner h1 {background: url('../image/txt_visit.png')no-repeat 0 0; width: 170px; height: 41px; margin: 0 auto;}
+.vi_banner p {text-align: center; margin-top: 12px;}
+.underbar {background-color: #222; text-align: center;}
+.underbar ul li {display: inline-block; font-size: 14px;}
+.underbar ul li.active a {color: #fff;}
+.underbar ul li a {display: inline-block; padding: 16px 36px; color: #909090;}
 
-
-
-
+.step1 {text-align: center; margin: 50px 20px; font-size: 34px;}
+.step1_time {text-align: center;}
+.step1_time h3 {font-size: 24px; color: #151515;}
+.step1_time p {margin-top: 10px; font-size: 18px; color: #151515;}
+.step1_time span {display: block; margin-top: 10px; font-size: 13px; color: #151515; line-height: 22px;}
+.step1_fee {text-align: center; margin: 35px 0 9px;}
+.step1_fee h3 {font-size: 24px; color: #151515;}
+.step1_fee table {width: 1184px; margin: 7px auto 0; border-top: 1px solid; border-bottom: 1px solid;}
+.step1_fee thead th {font-size: 18px; padding: 13px 13px; font-weight: normal; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc;}
+.step1_fee tbody th {font-size: 16px; padding: 5px 15px; font-weight: normal; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc;}
+.step1_fee tbody th span {font-size: 12px;}
 
 
 
