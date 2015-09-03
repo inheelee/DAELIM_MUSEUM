@@ -1,9 +1,7 @@
-//- 환경 설정
-block settings
-	include config/_setting
-
-//- 문서 헤드 영역
-include pages/_document_head
+include pages/_document_head.jade
+	//- 환경 설정
+	block settings
+		include config/_setting
 
 	head
 
@@ -27,8 +25,9 @@ include pages/_document_head
 		block stylesheets
 			link(rel="stylesheet", href="css/style.css")
 
-		link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700', rel='stylesheet', type='text/css')
+		link(href= webfont, rel='stylesheet', type='text/css')
 		link(rel="shortcut icon", href="image/icon_favicon.ico")
+		link(href=awesomefont, rel='stylesheet')
 
 		block _scripts_head
 			include pages/scripts/_scripts_head

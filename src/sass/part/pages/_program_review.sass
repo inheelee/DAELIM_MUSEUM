@@ -1,12 +1,15 @@
 // upcoming program
-
-.program_review
+.program_wrapper
   overflow: hidden
   background-color: #f8f8f8
-  width: 1184px
+  width: 100%
   padding-top: 50px
   padding-left: 42px
   padding-right: 42px
+
+.program_review
+  width: 1184px
+  margin: 0 auto
 
 .program
   float: left
@@ -51,8 +54,38 @@
 // review
 
 .review
+  position: relative
   float: right
   ul
     width: 362px
     height: 332px
     overflow: hidden
+
+    .review
+  position: relative
+
+.review_slide_controller
+  position: absolute
+  left: 0
+  bottom: 20px
+  width: 100%
+  text-align: center
+  z-index: 5
+  button
+    display: inline-block
+    padding-left: 10px
+    background: url('../image/btn_common.png') no-repeat -50px -80px
+    width: 10px
+    height: 13px
+    border: none
+    vertical-align: middle
+    cursor: pointer
+  a
+    display: inline-block
+    width: 11px
+    height: 12px
+    background: url('../image/btn_common.png') no-repeat -99px -80px
+    margin: 0 4px
+    vertical-align: middle
+    &.active
+      background-position: -124px -80px
