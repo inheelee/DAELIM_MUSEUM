@@ -5,52 +5,52 @@ block settings
 //- 문서 헤드 영역
 include pages/_document_head
 
-head
+	head
 
-	meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
 
-	//- 문자 인코딩
-	meta(charset= encoding)
+		//- 문자 인코딩
+		meta(charset= encoding)
 
-	//- 문서 타이틀
-	title= page_title
+		//- 문서 타이틀
+		title= page_title
 
-	//- 검색엔진 최적화 SEO
-	block meta_seo
-		include pages/head/_meta_seo
+		//- 검색엔진 최적화 SEO
+		block meta_seo
+			include pages/head/_meta_seo
 
-	//- 모바일 최적화
-	block meta_viewport
-		meta(name="viewport", content="width=device-width, initial-scale=1")
+		//- 모바일 최적화
+		block meta_viewport
+			meta(name="viewport", content="width=device-width, initial-scale=1")
 
-	//- 메인 스타일링
-	block stylesheets
-		link(rel="stylesheet", href="css/style.css")
+		//- 메인 스타일링
+		block stylesheets
+			link(rel="stylesheet", href="css/style.css")
 
-	link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700', rel='stylesheet', type='text/css')
-	link(rel="shortcut icon", href="image/icon_favicon.ico")
+		link(href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700', rel='stylesheet', type='text/css')
+		link(rel="shortcut icon", href="image/icon_favicon.ico")
 
-	block _scripts_head
-		include pages/scripts/_scripts_head
+		block _scripts_head
+			include pages/scripts/_scripts_head
 
-body(
-	class=[isMain == true ? 'main-page' : ''],
-	class=body_classlist
-)
+	body(
+		class=[isMain == true ? 'main-page' : ''],
+		class=body_classlist
+	)
 
-	#page
+		#page
 
-		block header
-			include pages/body/_header
+			block header
+				include pages/body/_header
 
-		block banner
-			include pages/body/_banner
+			block banner
+				include pages/body/_banner
 
-		block contents
-			include pages/body/_contents
+			block contents
+				include pages/body/_contents
 
-		block section
-			include pages/body/_section
+			block section
+				include pages/body/_section
 
-		block footer
-			include pages/body/_footer
+			block footer
+				include pages/body/_footer
