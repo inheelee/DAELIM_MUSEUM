@@ -1,0 +1,104 @@
+include pages/_document_head
+	//- 환경 설정
+	block settings
+		include config/_setting
+
+	head
+
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+
+		//- 문자 인코딩
+		meta(charset= encoding)
+
+		//- 문서 타이틀
+		title= page_title
+
+		//- 검색엔진 최적화 SEO
+		block meta_seo
+			include pages/head/_meta_seo
+
+		//- 모바일 최적화
+		block meta_viewport
+			meta(name="viewport", content="width=device-width, initial-scale=1")
+
+		//- 메인 스타일링
+		block stylesheets
+			link(rel="stylesheet", href="css/relative_program.css")
+
+		link(href=webfont, rel='stylesheet', type='text/css')
+		link(rel="shortcut icon", href="image/icon_favicon.ico")
+		link(href=awesomefont, rel='stylesheet')
+
+		block _scripts_head
+			include pages/scripts/_scripts_head
+
+	body
+		#relative_program
+			h2 전시연계 프로그램
+			ul.relative
+				li
+					img(src="image/relative_dpass.jpg", alt="")
+					div.text
+						h3 D PASS
+						strong 매주 토요일, 감각을 깨우는 특별한 만남
+						span 국내외 최고의 연사, 뮤지션들과 함께 하는 다채로운 콘서트, 토크, 워크샵 프로그램
+						a(role='button' href).more 티켓 구입 안내 및 프로그램 보기
+				li
+					img(src="image/relative_goodnight.jpg", alt="")
+					div.text
+						h3 GOOD NIGHT
+						strong 목요일에는 Play Like Me!
+						span 즐길 줄 아는 당신을 위한 밤의 초대. 밤하늘 아래 미술관에서 마시고, 보고, 듣는 당신의 굿나잇
+						a(role='button' href).more 프로그램보기
+
+			h2 교육프로그램
+			ul.edu
+				li
+					img(src="image/relative_1.jpg", alt="")
+					div.text
+						h3 프런키 Project Runway Kids
+						strong 전시연계 어린이 교육프로그램, 해피칠드런
+						span 헨릭 빕스코브의 재미있는 상상의 공간을 감상한 어린이들이 만드는 멋진 런웨이 제작 프로젝트
+						a(role='button' href).more 프로그램보기
+				li
+					img(src="image/relative_2.jpg", alt="")
+					div.text
+						h3 엉뚱 상상 작업실
+						strong 전시연계 청소년 교육프로그램, 틴 대리머
+						span 특별한 방식으로 헨릭 빕스코브의 작품을 만나고, 엉뚱한 상상으로 공간 만들기
+						a(role='button' href).more 프로그램보기
+				li
+					img(src="image/relative_3.jpg", alt="")
+					div.text
+						h3 미술관 사람들
+						strong 청소년 진로교육 프로그램
+						span 미술관 사람들과 특별한 만남으로 미술관의 다양한 직업들을 알아보는 진로교육 프로그램
+						a(role='button' href).more 프로그램보기
+				li
+					img(src="image/relative_4.jpg", alt="")
+					div.text
+						h3 교사초청설명회
+						strong 전시의 교육적 의미를 짚어보는 선생님들만을 위한 시간
+						span 수석 에듀케이터와 큐레이터, 도슨트가 소개하는 전시와 교육 프로그램
+						a(role='button' href).more 프로그램보기
+			div.guide_program
+				h2 가이드 프로그램
+				ul.guide
+					li
+						img(src="image/guide_1.jpg", alt="")
+						div.text
+							h3 모바일 투어
+							span Vibs FM!
+							span 헨릭 빕스코브와 수석 큐레이터의 목소리로 즐기는 전시 코멘터리
+					li.guide_mid
+						img(src="image/guide_2.jpg", alt="")
+						div.text
+							h3 도슨트 투어
+							span 매시 정각, Team VIBS가 된 도슨트와 함께하는 전시 감상
+					li
+						img(src="image/guide_3.jpg", alt="")
+						div.text
+							h3 스페셜 도슨트 투어
+							span 원하는 시간, 눈높이에 맞춘 진행되는 "우리만을 위한 도슨트 투어"
+							span - 사전 예약으로만 진행
+				a(href).guide_more 자세히보기

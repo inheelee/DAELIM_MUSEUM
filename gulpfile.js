@@ -89,7 +89,6 @@ gulp.task('sass', function() {
 	return rubySass('src/sass', config.ruby_sass)
 		.on('error', rubySass.logError)
 		.pipe( sourcemaps.write(config.ruby_sass_sourcemaps.dir, config.ruby_sass_sourcemaps.options) )
-		// .pipe(mq())
 		.pipe( gulp.dest('dist/css') )
 		.pipe( filter('**/*.css') )
 		.pipe( reload({stream: true}) );

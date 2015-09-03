@@ -32,24 +32,6 @@ include pages/_document_head
 		block _scripts_head
 			include pages/scripts/_scripts_head
 
-	body(
-		class=[isMain == true ? 'main-page' : ''],
-		class=body_classlist
-	)
-
-		#page
-
-			block header
-				include pages/body/_header
-
-			block banner
-				include pages/body/_banner
-
-			block contents
-				include pages/body/_contents
-
-			block section
-				include pages/body/_section
-
-			block footer
-				include pages/body/_footer
+	body
+		block lnb
+			include pages/body/_lnb
