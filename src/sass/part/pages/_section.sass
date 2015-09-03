@@ -3,94 +3,16 @@ section
   margin: 0 auto
   padding: 50px 0
 
-<<<<<<< HEAD
 h2
   margin-bottom: 20px
-  font-size: 26px
-  font-weight: 300
-  color: #151515
-
-h3
-  font-size: 18px
-  font-weight: 700
-
-strong
-  font-size: 13px
-  color: #909090
-
-=======
->>>>>>> origin/master
-.clearfix::after
-  content: ''
-  display: block
-  clear: both
-
-.a11y-hidden
-  overflow: hidden
-  position: absolute
-  clip: rect(0 0 0 0)
-  clip: rect(0, 0, 0, 0)
-  width: 1px
-  height: 1px
-  margin: -1px
-  padding: 0
-  border: 0
-  &.focusable
-    overflow: visible
-    position: static
-    clip: auto
-    width: auto
-    height: auto
-    margin: 0
-
-.more
-  position: absolute
-  top: 20px
-  right: 0px
-  padding-right: 10px
-  font-size: 13px
-  &::after
-    content: ''
-    width: 10px
-    height: 12px
-    display: inline-block
-    background: url('../image/icon_common.png') no-repeat -176px -117px
-
-<<<<<<< HEAD
-=======
-// /* section
->>>>>>> origin/master
 
 section > div
   float: left
-
 
 .museum_shop
   position: relative
   width: 592px
   height: 320px
-
-.controls
-  position: absolute
-  z-index: 100
-  bottom: 60px
-  left: 105px
-  a
-    display: inline-block
-    width: 10px
-    height: 12px
-    text-indent: -99999px
-    background-image: url('../image/btn_common.png')
-    background-repeat: no-repeat
-    background-position: -100px -99px
-    &.play
-      background-position: -50px -100px
-    &.pause
-      background-position: -75px -100px
-    &.shop_on
-      background-position: -125px -99px
-    + a
-      margin-left: 12px
 
 .museum_shop
   ul li
@@ -134,7 +56,6 @@ section > div
       font-style: normal
       color: #333
 
-
 .news, .callendar
   width: 296px
 
@@ -147,6 +68,7 @@ section > div
   h3
     margin-bottom: 11px
     font-size: 16px
+    color: #222
   p
     margin-bottom: 7px
     font-size: 14px
@@ -170,12 +92,11 @@ section > div
   padding-top: 22px
   border-top: 1px solid #fefefe
 
-
 .callendar
   background: #f8f8f8
   .schedule
     position: relative
-    height: 117px
+    height: 115px
     padding: 10px 14px 0
     background: #222222
     color: #ccc
@@ -213,11 +134,13 @@ section > div
   font-size: 9px
   th
     width: 38px
-    padding: 15px 0 5px
+    padding: 9px 0 5px
+    color: #222
   td
     position: relative
-    padding: 7px 0
+    padding: 7px
     font-size: 11px
+    color: #151515
     &.today
       color: #fff
     &.ev::after
@@ -237,7 +160,7 @@ section > div
       width: 28px
       height: 28px
       margin-left: -14px
-      bottom: -3px
+      bottom: 0px
       left: 50%
       background: url('../image/bg_calendar.png') no-repeat 0 -120px
     &.today::before
@@ -247,6 +170,6 @@ section > div
       width: 28px
       height: 28px
       margin-left: -14px
-      bottom: -3px
+      bottom: -1px
       left: 50%
       background: url('../image/bg_calendar.png') no-repeat 0 -160px
