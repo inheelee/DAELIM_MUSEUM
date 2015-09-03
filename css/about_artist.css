@@ -1,0 +1,212 @@
+@charset: "utf-8";
+
+/* 초기화 */
+html {
+	font-size:100%;
+}
+body {
+	margin:           0;
+	padding:          0;
+	line-height:      1.3;
+	font:             normal 12px '나눔고딕',nanumgothic,'돋움',dotum,AppleGothic, Arial, Verdana, sans-serif;
+	font-family:      'Roboto Condensed', sans-serif;
+	color:            #000;
+	background-color: #fff;
+}
+br	{
+	letter-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:1em;
+}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+ul, ol {
+	list-style:none;
+}
+img {
+	border:0;
+}
+table {
+	width:100%;
+	border-collapse:collapse;
+}
+a:link, a:visited {
+	color: #444547;
+	text-decoration:none;
+}
+a:hover, a:focus, a:active {
+	color:#55aaea;
+	text-decoration:none;
+}
+
+/* common */
+.clearfix::after {
+	content: '';
+	display: block;
+	clear:   both;
+}
+
+.a11y-hidden {
+	overflow: hidden;
+	position: absolute;
+	clip:     rect(0 0 0 0);
+	clip:     rect(0,0,0,0);
+	width:    1px;
+	height:   1px;
+	margin:   -1px;
+	padding:  0;
+	border:   0;
+}
+.a11y-hidden.focusable {
+	overflow: visible;
+	position: static;
+	clip:     auto;
+	width:    auto;
+	height:   auto;
+	margin:   0;
+}
+section {
+	width:   1184px;
+	margin:  0 auto;
+	padding: 50px 0;
+}
+
+h2 {
+	margin-bottom: 20px;
+	font-size:     26px;
+	font-weight:   300;
+	color:         #151515;
+}
+
+h3 {
+	font-size:   18px;
+	font-weight: 700;
+}
+
+strong {
+	font-size: 12px;
+	color:     #909090;
+}
+
+.more {
+	position:      absolute;
+	top:           20px;
+	right:         0px;
+	padding-right: 10px;
+	font-size:     13px;
+}
+
+.more::after {
+	content:    '';
+	width:      10px;
+	height:     12px;
+	display:    inline-block;
+	background: url('../image/curr_exhibit_banner2.jpg') no-repeat -176px -117px;
+}
+
+/* breadcrumb */
+.breadcrumb {
+	width: 1184px;
+	margin: 10px auto;
+	text-align: right;
+	font-size: 12px;
+}
+
+.breadcrumb a::after {
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 10px;
+	margin-left: 10px;
+	margin-right: 7px;
+	vertical-align: -1px;
+	background: url('../image/icon_common.png') no-repeat -60px -30px;
+}
+
+.breadcrumb span {
+	text-decoration: underline;
+}
+
+/* curr_exhibition */
+.curr_exhibition {
+	width: 100%;
+	height: 478px;
+	background: url('../image/curr_exhibit_banner2.jpg') no-repeat 50% 50%;
+}
+
+.inner {
+	width: 1184px;
+	margin: 0 auto;
+}
+
+.curr_exhibition p {
+	font-size: 14px;
+	letter-spacing: -1px;
+	color: #fff;
+}
+
+/* main */
+.lnb {
+	background: #222222;
+}
+
+.lnb ul {
+	width: 1184px;
+	margin: 0 auto;
+	padding: 15px 0;
+	text-align: center;
+}
+
+.lnb ul li {
+	display: inline-block;
+
+}
+
+.lnb ul li + li {
+	margin-left: 75px;
+}
+
+.lnb a {
+	font-size: 16px;
+	letter-spacing: -1px;
+	color: #909090;
+}
+
+.lnb a.visit {
+	color: #fff;
+}
+
+/* section.about_artist */
+.about_artist {
+	padding-top: 60px;
+	padding-left: 48px;
+	padding-right: 48px;
+	box-sizing: border-box;
+}
+.about_artist h3 {
+	font-size: 44px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.about_artist p {
+	font-size: 14px;
+	color: #595959;
+}
+
+.about_artist p:nth-child(3) {
+	font-size: 18px;
+	color: #151515;
+	text-align: center;
+	font-style: italic;
+	line-height: 1.8;
+}
+
+.about_artist p em {
+	font-size: 14px;
+	color: #595959;
+}
