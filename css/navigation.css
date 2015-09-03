@@ -1,0 +1,195 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@charset "utf-8";
+/*reset*/
+html {
+	font-size:100%;
+}
+body {
+	font:normal 12px '나눔고딕',nanumgothic,'돋움',dotum,AppleGothic, Arial, Verdana, sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height:1.3;
+	color:#666666;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+br	{
+	letter-spacing: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:1em;
+}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+}
+ul, ol {
+	list-style:none;
+}
+img {
+	border:0;
+}
+table {
+	width:100%;
+	border-collapse:collapse;
+}
+
+table caption {position:absolute; top:0; left:-999999px;}
+
+a:link, a:visited {
+	color: #666666;
+	text-decoration:none;
+}
+a:hover {
+	color: #666666;
+	text-decoration:underline;
+}
+
+select, input, textarea {
+	font:normal 1em '나눔고딕',nanumgothic,'돋움',dotum,AppleGothic, Arial, Verdana, sans-serif;
+	color:#797b80;
+	vertical-align:middle;
+}
+
+body>table {border:1px solid red;}
+
+/*navigation*/
+header{
+	font:normal 12px '나눔고딕',nanumgothic,'돋움',dotum,AppleGothic, Arial, Verdana, sans-serif;
+}
+.header_top{
+	width            : 100%;
+	background-color : #373737;
+}
+.inner{
+	width    : 1184px;
+	margin   : 0 auto;
+	overflow : hidden;
+}
+.inner .link-menu {
+	float : left;
+}
+.inner .link-menu a{
+	display    : inline-block;
+	padding    : 8px 50px;
+	color      : #ccc;
+	margin-top : 6px;
+}
+.inner .link-menu a:first-child{
+	border-radius    : 2px 2px 0 0;
+	background-color : white;
+	color            : black;
+}
+
+#lnb {
+	float    : right; 
+	overflow : hidden;
+}
+#lnb > ul > li{
+	float      : left;
+	margin-top : 11px;
+}
+#lnb > ul > li a{
+	font-size : 10px;
+	color     :#ccc;
+}
+#lnb > ul > li+li{
+	padding-left : 32px;
+}
+#lnb > ul:after{
+	clear :both;
+}
+
+.gnb_header_slide{
+	position : relative;
+	height: 80px;
+	background-color: #fff;
+	display: block;
+
+}
+.set_gnb{
+	position      : absolute;
+	width         : 100%;
+	border-bottom : 1px solid #e9e9e9;
+	background-color :#fff;
+	display: block;
+}
+.set_gnb.active{
+	display: block;
+	height : 306px;
+}
+#gnb{
+	position     : absolute;
+	left:7%;
+	margin       : 0 auto;
+	width        : 1184px;
+	height       : 80px;
+	border-bottom: 1px solid #e9e9e9;
+	display: block;
+	}
+#gnb > h1{
+	float   : left; 
+	padding : 30px 65px 20px 0;
+}
+#gnb > h1 > a  > img{
+	width : 208px;
+	height: 21px;
+}
+#gnb > .show_menu {
+	float    : left;
+	overflow : hidden;
+}
+#gnb > .show_menu > li {
+	color       : black;
+	font-weight : 700;
+	float       : left;
+	padding-top : 30px; 
+	width       : 140px;
+}
+#gnb > .show_menu > li > a{
+	line-height    : 1.7em;
+	font-size      : 12px;
+	padding-bottom : 59px;
+	display        : block;
+}
+#gnb > ul::after{
+	content    : '';
+	width      : 40px;
+	height     : 40px;
+	position   : absolute;top: 20px;right:0;
+	background : url('../image/menu_D.png') no-repeat;
+}
+.hide_menu{
+	display: none;
+}
+.hide_menu> li{
+	line-height : 28px;
+}
+.hide_menu> li a{
+	color       : #595959;
+	font-weight : 300;
+}
+.hide_menu > li > span{
+	display        : inline-block;
+	margin-left    : 7px;
+	text-indent    : -9999px;
+	width          : 15px;
+	height         : 15px;
+	vertical-align : text-bottom;
+	background     : url('../image/menu_plus_off.png') no-repeat;
+}
+.about_museum {
+	position : absolute;
+	left     : 0;
+	top      : 119px;
+	display: none;
+}
+.about_museum a img {
+	width  : 227px;
+	height : 128px;
+}
+.about_museum > a > p > strong{
+	color : black;
+}
+
