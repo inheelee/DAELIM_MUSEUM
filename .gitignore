@@ -1,6 +1,8 @@
 ###User###
 dist
 html_finish
+*.sublime-project
+*.sublime-workspace
 *.psd
 *.pdf
 
