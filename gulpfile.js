@@ -86,7 +86,8 @@ gulp.task('jade', function() {
 // 변경 업무: (sass|scss) → CSS
 gulp.task('sass', function() {
 	// gulp-ruby-sass 사용 시에는 디렉토리 명만 입력할 것!
-	return rubySass('src/sass',config.ruby_sass)
+	return rubySass('src/sass', config.ruby_sass)
+
 		.on('error', rubySass.logError)
 		.pipe( sourcemaps.write(config.ruby_sass_sourcemaps.dir, config.ruby_sass_sourcemaps.options) )
 		// .pipe(mq())

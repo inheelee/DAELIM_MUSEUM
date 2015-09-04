@@ -1,124 +1,157 @@
 section.clearfix
-	h2
-		| WHAT'S ON
-		strong 미술관의 다양한 소식
-	.museum_shop.col2 
-		.controls
-			a.play(href="", role="button") play
-			a(href="", role="button") 에코백
-			a.shop_on(href="", role="button") 클러치 백
-			a(href="", role="button") 북마크
-		ul
-			li.shop_desc_on
-				a
-					img(src="image/museum_shop1.jpg", height="230", width="592", alt="")
-					.description
-						h3 MUSEUM SHOP
-						strong 전시의 감동을 그대로
-						h4 에코백
-						p 헨릭 빕스코브의 감각적인 작품을 담으세요
-						em 10,000원
-				a
-					img(src="image/museum_shop2.jpg", height="320", width="592", alt="")
-					.description
-						h3 MUSEUM SHOP
-						strong 전시의 감동을 그대로
-						h4 클러치 백
-						p 단 하나의 작품, 스타일을 완성하다
-						em 20,000
-				a
-					img(src="image/museum_shop3.jpg", height="320", width="592", alt="")
-					.description
-						h3 MUSEUM SHOP
-						strong 전시의 감동을 그대로
-						h4 북마크
-						p 헨리 빕스코브의 작품이 책 속에 스며들다
-						em 2,000dnjs
-	//- div.museum_shop 끝
-
-	.news
-		.notice
-			h3 NOTICE
-			ul
-				li
-					p: a(href="") [대림 미술관/디뮤지엄] D MUSEUM 교육문화팀 인턴 모집 공고
-					span 2015.08.21
-				li
-					p: a(href="") 8/21(금) 미술관 주차장 사용 불가 안내
-					span 2015.08.20
-			a.more(href="") more
-		.event
-			h3 EVENT
-			ul
-				li
-					p: a(href="") &lt;가을 방학 3집 앨범 발매 기념공연&gt; 페이스북 초대 이벤트
-			a.more(href="") more
-	//- div.news 끝
-
-	.callendar
-		.schedule
-			h3 이달의 행사
-			p 2015.09.27 목
-			ul
-				li
-					a(href="") 9월. 플레이 나잇, 달콤한 동심으로 떠나는<br>플레이 가든!
-			a.more(href="") more
-		table
-			caption.a11y-hidden 달력-행사 일정
-			tr
-				th(scope="col1") SUN
-				th(scope="col1") MON
-				th(scope="col1") TUE
-				th(scope="col1") WED
-				th(scope="col1") THU
-				th(scope="col1") FRI
-				th(scope="col1") SAT
-			tr
-				td: a(href="") 30
-				td: a(href="") 31
-				td: a.ev(href="") 1
-				td: a(href="") 2
-				td: a(href="") 3
-				td: a(href="") 4
-				td: a(href="") 5
-			tr
-				td: a(href="") 6
-				td: a.ev(href="") 7
-				td: a(href="") 8
-				td: a(href="") 9
-				td: a(href="") 10
-				td: a.ev(href="") 11
-				td: a(href="") 12
-			tr
-				td: a(href="") 13
-				td: a(href="") 14
-				td: a(href="") 15
-				td: a.ev(href="") 16
-				td: a(href="") 17
-				td: a(href="") 18
-				td: a.ev(href="") 19
-			tr
-				td: a.ev(href="") 20
-				td: a(href="") 21
-				td: a(href="") 22
-				td: a.ev(href="") 23
-				td: a(href="") 24
-				td: a.ev(href="") 25
-				td: a.ev(href="") 26
-			tr
-				td: a(href="") 27
-				td: a.check(href="") 28
-				td: a(href="") 29
-				td: a(href="") 30
-				td: a(href="") 31
-				td: a(href="") 1
-				td: a(href="") 2
-			tr
-				td: a(href="") 3
-				td: a(href="") 4
-				td: a(href="") 5
-				td: a(href="") 6
-				td: a(href="") 7
-				td: a(href="") 8
-				td: a(href="") 9
-	//- div.callendar 끝
+      h2
+        | WHAT'S ON
+        strong 미술관의 다양한 소식
+      .museum_shop.col2
+        .controls
+          a.play(href='', role='button') play
+          a.shop_on(href='', role='button') 에코백
+          a(href='', role='button') 클러치 백
+          a(href='', role='button') 북마크
+        ul
+          li.shop_desc_on
+            a(href='')
+              img(src='image/museum_shop1.jpg', height='320', width='592', alt='')
+              .description
+                h3 MUSEUM SHOP
+                strong 전시의 감동을 그대로
+                h4 에코백
+                p 헨릭 빕스코브의 감각적인 작품을 담으세요
+                em 10,000원
+          li
+            a(href='')
+              img(src='image/museum_shop2.jpg', height='320', width='592', alt='')
+              .description
+                h3 MUSEUM SHOP
+                strong 전시의 감동을 그대로
+                h4 클러치 백
+                p 단 하나의 작품, 스타일을 완성하다
+                em 20,000원
+          li
+            a(href='')
+              img(src='image/museum_shop3.jpg', height='320', width='592', alt='')
+              .description
+                h3 MUSEUM SHOP
+                strong 전시의 감동을 그대로
+                h4 북마크
+                p 헨리 빕스코브의 작품이 책 속에 스며들다
+                em 2,000원
+      .news
+        .notice
+          h3 NOTICE
+          ul
+            li
+              p
+                a(href='') [대림 미술관/디뮤지엄] D MUSEUM 교육문화팀 인턴 모집 공고
+              span 2015.08.21
+            li
+              p
+                a(href='') 8/21(금) 미술관 주차장 사용 불가 안내
+              span 2015.08.20
+          a.more(href='') more
+        .event
+          h3 EVENT
+          ul
+            li
+              p
+                a(href='') <가을 방학 3집 앨범 발매 기념공연 > 페이스북 초대 이벤트
+              span 2015.0825 - 2015.08.26
+          a.more(href='') more
+      .callendar
+        .schedule
+          h3 이달의 행사
+          p 2015.09.27 목
+          ul
+            li
+              a(href='')
+                | 9월. 플레이 나잇, 달콤한 동심으로 떠나는
+                br
+                | 플레이 가든!
+          a.more(href='') more
+        table
+          caption.a11y-hidden 달력-행사 일정
+          tr
+            th(scope='col') SUN
+            th(scope='col') MON
+            th(scope='col') TUE
+            th(scope='col') WED
+            th(scope='col') THU
+            th(scope='col') FRI
+            th(scope='col') SAT
+          tr
+            td
+              a(href='') 30
+            td
+              a(href='') 31
+            td.ev
+              a(href='') 1
+            td
+              a(href='') 2
+            td
+              a(href='') 3
+            td
+              a(href='') 4
+            td
+              a(href='') 5
+          tr
+            td.ev
+              a(href='') 6
+            td
+              a(href='') 7
+            td.ev
+              a(href='') 8
+            td
+              a(href='') 9
+            td.ev
+              a(href='') 10
+            td
+              a(href='') 11
+            td
+              a(href='') 12
+          tr
+            td.ev
+              a(href='') 13
+            td
+              a(href='') 14
+            td.ev
+              a(href='') 15
+            td
+              a(href='') 16
+            td
+              a(href='') 17
+            td
+              a(href='') 18
+            td
+              a(href='') 19
+          tr
+            td.ev
+              a(href='') 20
+            td
+              a(href='') 21
+            td.ev
+              a(href='')
+              | 22
+            td
+              a(href='') 23
+            td
+              a(href='') 24
+            td.ev
+              a(href='') 25
+            td.ev
+              a(href='') 26
+          tr
+            td
+              a(href='') 27
+            td.check
+              a(href='') 28
+            td
+              a(href='') 29
+            td
+              a(href='') 30
+            td
+              a(href='') 31
+            td
+              a(href='') 1
+            td
+              a(href='') 2
+     
