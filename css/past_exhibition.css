@@ -52,15 +52,20 @@ select, input, textarea {
 .wrap{
 	margin: 0 auto;
 	width: 1184px;
+	padding-bottom: 80px;
 }
+
 .past_head{
 	height: 144px;
 }
 .past_head > h1{
 	text-align: center;
 }
-ul{
+ul:first-of-type {
 	border-top: 1px solid black;
+}
+ul:last-of-type {
+	border-bottom: 1px solid black;
 }
 ul > li{
 	width: 1184px;
@@ -111,32 +116,44 @@ ul > li > a > img{
 	float: left;
 }
 .pages {
-	border: 1px solid red;
 	text-align: center;
 	width: 100%;
 	padding-top: 24px;
 }
 .pages *{
 	display: inline-block;
+	vertical-align: top;
 
 }
+
 .pages > a:first-child{
-	border: 1px solid black;
+	border: 1px solid #e9e9e9;
 	text-indent: -9999px;
 	width: 30px;
 	height: 30px;
 	background: url('../image/pastlist_btn_paging.png') no-repeat 0 0;
 }
 .pages > a:last-child{
-	border: 1px solid black;
+	border: 1px solid #e9e9e9;
 	text-indent: -9999px;
 	width: 30px;
 	height: 30px;
 	background: url('../image/pastlist_btn_paging.png') no-repeat -30px 0;
 }
+
+
 .pages > span > a{
-	border: 1px solid black;
+	border: 1px solid #e9e9e9;
+	line-height: 1.9;
 	width: 30px;
 	height: 30px;
-	vertical-align: center;
+	text-align: center;
+	color: #595959;
+	font-size: 14px;
+	margin: 0 2px;
+}
+
+.pages a:hover{
+	color:white;
+	background-color: #e9e9e9;
 }
