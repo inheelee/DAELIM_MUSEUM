@@ -86,3 +86,4 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+src/jade/part/pages/body/_banner.jade
