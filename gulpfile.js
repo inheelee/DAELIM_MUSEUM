@@ -6,7 +6,6 @@ var gulp = require('gulp'),
 	// CSS / ruby Sass  ----------------------------------- */
 	rubySass    = require('gulp-ruby-sass'),
 	filter = require('gulp-filter'),
-	mq = require('gulp-combine-mq')
 	sourcemaps  = require('gulp-sourcemaps'),
 
 	imagemin = require('gulp-imagemin'),
@@ -35,6 +34,7 @@ var config = {
 		'default-encoding' : 'utf-8',    // Windows 환경에서 CP949 오류 발생 시
 		'style'            : 'expanded', // compact, compressed, nested, expanded
 		'sourcemap'        : true,
+		'require'          : ['bourbon', 'susy']
 		// 'no-cache'         : true
 	},
 	'ruby_sass_sourcemaps': {

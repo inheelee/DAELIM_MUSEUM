@@ -66,20 +66,25 @@
 	position: relative
 	.guide
 		img
-			padding-top: 25px
 			width: 100%
+			padding-top: 25px
+
 		li
-			width: calc((100% - 80px) / 3)
+			box-sizing: border-box
+			width: calc((100% - 82px) / 3)
+			height: 353px
 			float: left
 			padding-right: 20px
 			padding-left: 20px
+
 			&:first-child
 				padding-left: 0px
+				border-right: 1px solid #373737
+
 			&:last-child
 				padding-right: 0px
-		.guide_mid
-			border-left: 1px solid #373737
-			border-right: 1px solid #373737
+				border-left: 1px solid #373737
+
 		.text
 			padding: 20px 0 0 0
 
