@@ -104,7 +104,7 @@ strong {
 	width:      10px;
 	height:     12px;
 	display:    inline-block;
-	background: url('../image/icon_common.png') no-repeat -176px -117px;
+	background: url('../image/curr_exhibit_banner2.jpg') no-repeat -176px -117px;
 }
 
 /* breadcrumb */
@@ -134,18 +134,27 @@ strong {
 .curr_exhibition {
 	width: 100%;
 	height: 478px;
-	background: url('../image/curr_exhibition1.jpg') no-repeat 50% 50%;
+	background: url('../image/curr_exhibit_banner1.jpg') no-repeat 50% 50%;
 }
 
 .inner {
 	width: 1184px;
+	height: inherit;
 	margin: 0 auto;
+	position: relative;
 }
 
-.curr_exhibition p {
+.curr_exhibition ul {
+	position: absolute;
 	font-size: 14px;
 	letter-spacing: -1px;
 	color: #fff;
+	bottom: 20px;
+	left: 20px;
+}
+
+.curr_exhibition ul li + li {
+	margin-top: 5px;
 }
 
 /* main */
@@ -177,4 +186,44 @@ strong {
 
 .lnb a.visit {
 	color: #fff;
+}
+
+/* section.about_exhibition */
+.about_exhibition h3 {
+	font-size: 22px;
+	font-weight: 300;
+	color: #00857e;
+	text-align: center;
+}
+.about_exhibition h3 span {
+
+	border-bottom: 1px solid #00857e;
+}
+
+.about_exhibition p {
+	font-size: 14px;
+	color: #595959;
+	letter-spacing: -1px;
+}
+
+.about_exhibit {
+	padding-bottom: 500px;
+	background: url('../image/exhibit1.jpg') no-repeat center bottom;
+}
+
+.about_exhibit h4 {
+	font-size: 36px;
+	font-weight: 300;
+	letter-spacing: -1px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.about_exhibit p + p {
+	margin-top: 25px;
+}
+
+.artist_interview {
+	height: 460px;
+	background: url('../image/artist_interview.jpg') no-repeat center bottom;
 }

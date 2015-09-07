@@ -139,13 +139,22 @@ strong {
 
 .inner {
 	width: 1184px;
+	height: inherit;
 	margin: 0 auto;
+	position: relative;
 }
 
-.curr_exhibition p {
+.curr_exhibition ul {
+	position: absolute;
 	font-size: 14px;
 	letter-spacing: -1px;
 	color: #fff;
+	bottom: 20px;
+	left: 20px;
+}
+
+.curr_exhibition ul li + li {
+	margin-top: 5px;
 }
 
 /* main */
@@ -196,17 +205,41 @@ strong {
 .about_artist p {
 	font-size: 14px;
 	color: #595959;
+	position: relative;
 }
 
-.about_artist p:nth-child(3) {
-	font-size: 18px;
+.about_artist p + p {
+	width: 650px;
+	font-size: 19px;
 	color: #151515;
+	margin: 55px auto;
 	text-align: center;
 	font-style: italic;
 	line-height: 1.8;
 }
 
+.about_artist p + p::before {
+	content: '';
+	display: block;
+	width: 22px; height: 17px;
+	background: url('../image/icon_common.png') -50px -210px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.about_artist p + p::after {
+	content: '';
+	display: block;
+	width: 22px; height: 17px;
+	background: url('../image/icon_common.png') -80px -210px;
+	position: absolute;
+	bottom: 60px;
+	right: 0;
+}
+
 .about_artist p em {
-	font-size: 14px;
+	font-size: 16px;
 	color: #595959;
+	display: block;
+	margin-top: 25px;
 }
