@@ -10,6 +10,7 @@ var gulp = require('gulp'),
 
 	imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant'),
+	compass =require('gulp-compass'),
 
 	/* Browser server sync -------------------------------- */
 	browserSync = require('browser-sync'),
@@ -34,6 +35,7 @@ var config = {
 		'default-encoding' : 'utf-8',    // Windows 환경에서 CP949 오류 발생 시
 		'style'            : 'expanded', // compact, compressed, nested, expanded
 		'sourcemap'        : true,
+		'compass'          : true,
 		'require'          : ['bourbon', 'susy']
 		// 'no-cache'         : true
 	},
@@ -61,7 +63,7 @@ var config = {
 gulp.task('default', [
 	'jade',
 	'sass',
-	'image',
+	// 'image',
 ], function() {
 	browserSync(config.browserSync)
 	gulp.start('watch');

@@ -54,24 +54,25 @@
 			font-size: 12px
 			color: #373737
 			border-bottom: 1px solid #373737
+			
 			&:hover
 				color: #373737
 
-		&::after
-			content: ''
-			display: block
-			clear: both
+			padding-right: 0
 
 .guide_program
 	position: relative
+	width: 1184px
 	.guide
 		img
 			width: 100%
 			padding-top: 25px
 
+		li + li
+			border-top: 0
 		li
 			box-sizing: border-box
-			width: calc((100% - 82px) / 3)
+			width: calc(100% / 3)
 			height: 353px
 			float: left
 			padding-right: 20px
@@ -79,17 +80,18 @@
 
 			&:first-child
 				padding-left: 0px
-				border-right: 1px solid #373737
+				border-right: 1px solid #e9e9e9
 
 			&:last-child
 				padding-right: 0px
-				border-left: 1px solid #373737
+				border-left: 1px solid #e9e9e9
+
 
 		.text
 			padding: 20px 0 0 0
 
 
-	.guide_more
+	.guide_preview
 		background: url(../image/btn_common.png)no-repeat 31px -26px
 		display: block
 		padding-right: 20px
