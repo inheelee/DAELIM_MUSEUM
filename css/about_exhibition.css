@@ -224,6 +224,17 @@ strong {
 }
 
 .artist_interview {
+	position: relative;
 	height: 460px;
 	background: url('../image/artist_interview.jpg') no-repeat center bottom;
+}
+
+.artist_interview a {
+	display:block;
+	width: 60px;
+	height: 60px;
+	background: url(../image/btn_common.png) no-repeat -50px -130px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
