@@ -1,0 +1,106 @@
+include pages/_document_head
+	//- 환경 설정
+	block settings
+		include config/_setting
+
+	head
+
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+
+		//- 문자 인코딩
+		meta(charset= encoding)
+
+		//- 문서 타이틀
+		title= page_title
+
+		//- 검색엔진 최적화 SEO
+		block meta_seo
+			include pages/head/_meta_seo
+
+		//- 모바일 최적화
+		block meta_viewport
+			meta(name="viewport", content="width=device-width, initial-scale=1")
+
+		//- 메인 스타일링
+		block stylesheets
+			link(rel="stylesheet", href="css/museumshop.css")
+
+		link(href= webfont, rel='stylesheet', type='text/css')
+		link(rel="shortcut icon", href="image/icon_favicon.ico")
+		link(href=awesomefont, rel='stylesheet')
+
+		block _scripts_head
+			include pages/scripts/_scripts_head
+
+	body(
+		class=[isMain == true ? 'main-page' : ''],
+		class=body_classlist
+	)
+		.museumshop_wrapper
+			.title_wrapper
+				h3 뮤지엄샵
+				p 상품은 대림미술관 1F Museum Shop에서 구매하실 수 있습니다.
+
+			ul.product_list
+				li.product_text 
+					h2.first_ex 전시도록
+					strong.first_ex Exhibition Catalogue
+					strong 15,000 won
+					p 헨릭 빕스코브의 총체적인 예술세계
+				li.product_image
+					img(src="image/museumshop_exh_1.jpg", alt="")
+			
+			ul.product_list
+				li.product_text 
+					h2 북마크
+					strong Bookmark
+					strong 2,000 won
+					p 헨릭 빕스코의 작품이 책 에 스며들다
+				li.product_image
+					img(src="image/museumshop_book_1.jpg", alt="")
+			
+			ul.product_list
+				li.product_text 
+					h2 노트세트
+					strong Notebook
+					strong 7,000 won / 5EA
+					p 머릿속 별난 생각이 빛나는 아디어가 되다
+				li.product_image
+					img(src="image/museumshop_note_1.jpg", alt="")
+
+			ul.product_list
+				li.product_text 
+					h2 연필 세트
+					strong Pencil Set
+					strong 6,000 won
+					p 연필 끝에서 시작되는 발칙한 상상
+				li.product_image
+					img(src="image/museumshop_pencil_1.jpg", alt="")
+			
+			ul.product_list
+				li.product_text 
+					h2 파일
+					strong File
+					strong 2,000 won
+					p 놓치고 싶지 않은 기억을 스크랩하다
+				li.product_image
+					img(src="image/museumshop_file_1.jpg", alt="")
+			
+			ul.product_list
+				li.product_text 
+					h2 클러치 백
+					strong Clutch Bag
+					strong 20,000 won
+					p 단 하나의 작품, 스타일을 완성하다
+				li.product_image
+					img(src="image/museumshop_clutch_1.jpg", alt="")
+
+			ul.product_list
+				li.product_text 
+					h2 에코백
+					strong Eco Bag
+					strong 10,000 won
+					p 헨릭 빕스코의 감각적인 작품을 담다
+				li.product_image
+					img(src="image/museumshop_eco_1.jpg", alt="")
+
