@@ -77,25 +77,98 @@ select, input, textarea {
 .breadcrumb span {
 	text-decoration: underline;
 }
-/*past_head*/
-.past_head{
-	height: 119px;
-}
-.past_head > h1{
-	padding: 12px 44px;
+/*title01*/
+.title01{
+	margin: 22px auto 44px;
 	text-align: center;
 }
+.title01 *{
+	display: block;
+}
+.title01 > h1 img{
+	margin-left: auto;
+	margin-right: auto;
+}
+.title01 > strong{
+	font-size: 20px;
+	padding-top: 13px;
+	color: #000;
+}
+.title01 > span{
+	font-size: 15px;
+	padding-top: 13px;
+	color: #373737;
+}
+/* banner */
+.banner{
+	width: 1184px;
+	height: 371px;
+}
+.banner *{
+	display: block;
+}
+.banner a{overflow: hidden;}
+.banner a img{
+	float: left;
+}
+.banner a div{
+	background-color:#f4f4f4;
+	width: 535px;
+	height: 288px;
+	float: left;
+	padding: 41px 27px 41px 30px;
+	letter-spacing: -1px;
+}
+.banner a div span{
+	font-size: 14px;
+	color: #595959;
+}
+.banner a div em{
+	font-size: 30px;
+	color: #151515;
+	padding-top: 17px;
+	line-height: 38px;
+	font-style: normal;
+}
+.banner a div p{
+	color: #595959;
+	line-height: 22px;
+	font-size: 14px;
+	padding-top: 15px;}
+.banner a div span:last-child{
+	margin-top: 78px;
+	width: 80px;
+	color: #151515;
+	border-bottom: 2px solid #151515;
+	font-size: 16px;
+
+}
+/* title02 */
+.title02{
+	overflow: hidden;
+	padding: 55px 0 20px 0;
+	vertical-align: top;
+}
+.title02 h2{
+	font-size: 27px;
+	color: #151515;
+	font-weight: 300;
+	float: left;
+}
+.title02::after{
+	content: '';
+	clear: both;
+}
 /* 기간선택*/
-#exhibit_day{
+#exhibit_select{
 	float: right;
-	margin-top: 16px;
 }
 select{
 	min-width: 200px;
 	height: 30px;
 	vertical-align: top;
 }
-#exhibit_day a{
+#exhibit_select button{
 	display: inline-block;
 	padding: 5px 15px;
 	text-align: center;
@@ -104,71 +177,57 @@ select{
 	font-size: 14px;
 	color: #fff;
 }
-#exhibit_day a:hover{
+#exhibit_select button:hover{
 	cursor: pointer;
 	text-decoration: none;
 	color: #fff;
 	border: 1px solid #151515;
 	background-color: #151515;
 }
-
-/*main*/
-ul:first-of-type {
-	border-top: 1px solid black;
-}
-ul:last-of-type {
-	border-bottom: 1px solid black;
-}
-ul > li{
+/* section */
+.section{
 	width: 1184px;
-	height: 323px;
 	overflow: hidden;
+	border-top: 2px solid #151515;
+	border-bottom: 2px solid #151515;
+}
+.section li{
+	float: left;
+	width: 259px;
+	height: 358px;
+	padding: 24px;
+	border-bottom: 1px solid #e9e9e9;
 	position: relative;
-	border-top: 1px solid #e9e9e9;
 }
-ul > li > h2{
-	color : black;
-	font-size: 44px;
-	font-weight: 300;
-	position: absolute; top: 66px; left: 0;
+.section img{
+	padding-bottom: 10px;
 }
-ul > li > div{
-	width: 275px;
-	float: left;
-	padding: 73px 37px 0 135px;
+.section li:first-child{
+	padding-left: 0;
 }
-ul > li > div > a{
-	color:black;
+.section li:last-child{
+	padding-right: 0;
 }
-ul > li > div > a:hover{
-	color:#00857E;
-	text-decoration: none;
+.section li+li{
+	border-left: 1px solid #e9e9e9;
 }
-ul > li > div > a > *{
-	display: block;
+.section ul li span{
+	color: #151515;
+	font-size:16px;
 }
-ul > li > div > a > strong{
-	line-height: 32px;
-	font-size: 28px;
-	font-weight: 300;
-}
-ul > li > div > a > span{
-	font-size: 16px;
-	margin-top: 12px;
-}
-ul > li > div > a > em{
-	margin-top: 20px;
-	font-size: 14px;
+.section ul li em{
+	position: absolute;
+	left: 24px;
+	bottom: 26px;
 	font-style: normal;
-	color: #909090;
 }
-ul > li > a > img{
-	width: 737px;
-	height: 323px;
-	float: left;
+.section ul li:first-child em{
+	left: 0;
 }
+
+
 /* page 선택 */
-.pages {
+.pages{
 	text-align: center;
 	width: 100%;
 	padding-top: 24px;
@@ -204,4 +263,45 @@ ul > li > a > img{
 .pages a:hover{
 	text-decoration: none;
 	background-color: #e9e9e9;
+}
+/*검색*/
+#search{
+	margin-top: 30px;
+	width: 1184px;
+	height: 60px;
+	background-color: #f4f4f4;
+	border: 1px solid #ccc;
+}
+
+#search * {
+	vertical-align: top;
+}
+#search div {
+	text-align: center;
+	margin-top: 15px;
+}
+#search select{
+	min-width: 100px;
+	height: 30px;
+}
+#search input {
+	min-width: 234px;
+	height: 24px;
+	line-height: 24px;
+}
+#search button{
+	display: inline-block;
+	padding: 5px 15px;
+	text-align: center;
+	border: 1px solid #404040;
+	background-color: #686868;
+	font-size: 14px;
+	color: #fff;
+}
+#search button:hover{
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #151515;
+	background-color: #151515;
 }

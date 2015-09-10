@@ -1,0 +1,76 @@
+doctype html
+// [if !IE] <!
+html.no-js(lang='ko-KR')
+  // <![endif]
+  //if IE 6
+    html.ie.ie6.no-js(lang='ko-KR')
+  //if IE 7
+    html.ie.ie7.no-js(lang='ko-KR')
+  //if IE 8
+    html.ie.ie8.no-js(lang='ko-KR')
+  //if IE 9
+    html.ie.ie9.no-js(lang='ko-KR')
+  head
+    meta(http-equiv='X-UA-Compatible', content='IE=7')
+    meta(charset='UTF-8')
+    title PAST EXHIBITION 2
+    link(rel='stylesheet', href='css/past_exhibition.css')
+  body
+    .wrap
+      .breadcrumb
+        a(href='') 홈
+        a(href='') EXHIBITION
+        span 지난전시
+      .past_head
+        h1
+          img(src='image/past_exhibition.png', alt='past exhibiton', width='353', height='34')
+        #exhibit_day
+          select(name='', id='', title='기간선택란')
+            option(value='') 전체기간
+            option(value='2015') 2015
+            option(value='2014') 2014
+            option(value='2013') 2013
+            option(value='2012') 2012
+            option(value='2011') 2011
+            option(value='2010') 2010
+            option(value='2009') 2009
+            option(value='2008') 2008
+            option(value='2007') 2007
+            option(value='2006') 2006
+            option(value='2005') 2005
+            option(value='2004') 2004
+          a.btn(href='') 조회
+      ul
+        li
+          h2 2012
+          div
+            a(href='')
+              strong The 100th Anniversary of Finn Juhl’s Birth
+              span 핀 율 탄생 100주년전-북유럽 가구 이야기
+              em 2012.04.26 - 2012.09.28
+          a(href='')
+            img(src='image/pastlist_Anniversary.jpg', alt='핀 율 탄생 100주년전-북유럽 가구 이야기')
+      ul
+        li
+          h2 2011
+          div
+            a(href='')
+              strong WORK IN PROGRESS - Karl Lagerfeld photography exhibition
+              span WORK IN PROGRESS - Karl Lagerfeld photography exhibition
+              em 2011.10.13 - 2012.03.18
+          a(href='')
+            img(src='image/pastlist_WORK IN PROGRESS.jpg', alt='Karl Lagerfeld 사진전시')
+        li
+          div
+            a(href='')
+              strong Juergen Teller - Touch Me 
+              span Juergen Teller - Touch me
+              em 2011.04.15 - 2011.06.26
+          a(href='')
+            img(src='image/pastlist_Juergen Teller.jpg', alt='Juergen Teller 사진전')
+      .pages
+        a(href='') 첫 페이지 바로가
+        span
+          a(href='') 1
+          a(href='') 2
+        a(href='') 마지막 페이지 바로가기
