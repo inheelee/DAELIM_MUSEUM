@@ -1,0 +1,17 @@
+@import "susy";
+
+/**
+ * --------------------------------
+ * Susy Global Setting
+ * --------------------------------
+ */
+
+
+$susy: (
+	container: 1200px,
+	columns: 16,
+	gutters: 1/4,
+	gutter-position: split, 
+	//split 사용할 경우 first last를 사용하지 않아도 됨
+	//inside 사용시 padding을 사용하게 되어 gutter없이 사용
+);
