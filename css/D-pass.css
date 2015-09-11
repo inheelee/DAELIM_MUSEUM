@@ -99,11 +99,57 @@ select, input, textarea {
 	padding-top: 13px;
 	color: #373737;
 }
+/* banner */
+.banner{
+	width: 1184px;
+	height: 371px;
+}
+.banner *{
+	display: block;
+}
+.banner a{overflow: hidden;}
+.banner a img{
+	float: left;
+}
+.banner a div{
+	background-color:#f4f4f4;
+	width: 535px;
+	height: 288px;
+	float: left;
+	padding: 41px 27px 41px 30px;
+	letter-spacing: -1px;
+	position: relative;
+}
+.banner a div span{
+	font-size: 14px;
+	color: #595959;
+}
+.banner a div em{
+	font-size: 30px;
+	color: #151515;
+	padding-top: 17px;
+	line-height: 38px;
+	font-style: normal;
+}
+.banner a div p{
+	color: #595959;
+	line-height: 22px;
+	font-size: 14px;
+	padding-top: 15px;}
+.banner a div span:last-child{
+	position: absolute;
+	bottom: 41px;
+	left: 30px;
+	width: 80px;
+	color: #151515;
+	border-bottom: 2px solid #151515;
+	font-size: 16px;
 
+}
 /* title02 */
 .title02{
 	overflow: hidden;
-	padding-bottom: 20px;
+	padding: 55px 0 20px 0;
 	vertical-align: top;
 }
 .title02 h2{
@@ -116,7 +162,7 @@ select, input, textarea {
 	content: '';
 	clear: both;
 }
-/* 전시선택*/
+/* 기간선택*/
 #exhibit_select{
 	float: right;
 }
@@ -151,17 +197,13 @@ select{
 .section li{
 	float: left;
 	width: 259px;
-	height: 325px;
+	height: 220px;
 	padding: 24px;
 	border-bottom: 1px solid #e9e9e9;
 	position: relative;
 }
 .section img{
-	margin-bottom: 13px;
-}
-.section img:hover{
-	border: 1px solid #151515;
-	box-sizing: border-box;
+	padding-bottom: 10px;
 }
 .section li:first-child{
 	padding-left: 0;
@@ -184,10 +226,6 @@ select{
 }
 .section ul li:first-child em{
 	left: 0;
-}
-.section ul>.last{
-	border-right: 1px solid #e9e9e9;
-	padding-right: 24px;
 }
 
 
@@ -233,45 +271,4 @@ select{
 .pages a:hover{
 	text-decoration: none;
 	background-color: #e9e9e9;
-}
-/*검색*/
-#search{
-	margin-top: 30px;
-	width: 1184px;
-	height: 60px;
-	background-color: #f4f4f4;
-	border: 1px solid #ccc;
-}
-
-#search * {
-	vertical-align: top;
-}
-#search div {
-	text-align: center;
-	margin-top: 15px;
-}
-#search select{
-	min-width: 100px;
-	height: 30px;
-}
-#search input {
-	min-width: 234px;
-	height: 24px;
-	line-height: 24px;
-}
-#search button{
-	display: inline-block;
-	padding: 5px 15px;
-	text-align: center;
-	border: 1px solid #404040;
-	background-color: #686868;
-	font-size: 14px;
-	color: #fff;
-}
-#search button:hover{
-	cursor: pointer;
-	text-decoration: none;
-	color: #fff;
-	border: 1px solid #151515;
-	background-color: #151515;
 }
