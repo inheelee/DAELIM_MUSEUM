@@ -20,9 +20,9 @@ block banner
     h2.a11y-hidden 현재전시 네비게이션
     ul
       li
-        a.visit(href='') 전시소개
+        a.visit(href='/') 전시소개
       li
-        a(href='') 작가소개
+        a(href='about_artist.html') 작가소개
       li
         a(href='') 전시연계 프로그램
       li
@@ -32,7 +32,12 @@ block contents
 
 block section
   section.about_exhibition
-    .about_exhibit
+    nav.exhibition_lnb
+      a.visit(href="#about_exhibit")
+      a(href="#artist_interview")
+      a(href="#view_point")
+      a(href="#photo_gallery")
+    #about_exhibit
       h3
         span ABOUT THE EXHIBITION
       h4 헨릭 빕스코브-패션과 예술, 경계를 허무는 아티스트
@@ -40,11 +45,11 @@ block section
         | 대림미술관은 2015년 7월 9일부터 12월 31일까지 패션 디자이너이자 아티스트 헨릭 빕스코브(HENRIK VIBSKOV)의 전시 <헨릭 빕스코브-패션과 예술, 경계를 허무는 아티스트>(HENRIK VIBSKOV - FABRICATE)를 개최합니다. 파리 패션 위크에서 매년 컬렉션을 발표하는 유일한 북유럽 패션 디자이너 헨릭 빕스코브는 끊임없이 형식을 파괴하고 예기치 못한 충격적인 방식으로 그만의 독창적인 패션쇼를 선보이며 새로운 컬렉션이 발표될 때마다 뜨거운 관심과 화제를 불러일으키고 있습니다. 그는 패션뿐만 아니라 사진, 설치, 영상, 퍼포먼스 등 순수예술의 영역에서 꾸준히 작업을 진행해 왔으며, 세계 유수의 미술관에서 다수의 전시를 통해 아티스트로서의 무한한 가능성을 인정받았습니다.
       p
         | 이번 전시는 새롭게 재연출한 런웨이와 데뷔부터 현재까지 발표된 대표 컬렉션, 그리고 다양한 장르를 아우르는 주요작 및 신작을 포함한 총 300여 점의 작품을 한자리에서 소개하고, 특정 장르의 형식적 한계를 깨기 위한 시도와 변화를 두려워하지 않는 헨릭 빕스코브의 작업 방식을 통해 모든 창작의 과정을 놀이처럼 즐기는 적극적인 멀티 크리에이터의 모습을 제시하고자 합니다. 다양한 예술적 영감과 관심사를 하나로 아우르는 도구로써, 패션이 단순히 ‘입기 위한’ 옷이 아닌 ‘자유롭고 열린 표현’을 위한 매체로 확장될 수 있는 가능성을 선보이는 전시 <헨릭 빕스코브-패션과 예술, 경계를 허무는 아티스트>는 위트 넘치는 감각의 놀이터에서 관람객들이 보다 열린 관점으로 새롭게‘ 패션’을 바라보고, 직접 그의 예술 세계를 경험해보는 특별한 기회가 될 것입니다.
-    .artist_interview
+    #artist_interview
       h3
         span ARTIST'S INTERVIEW
-      a.a11y-hidden(href='', role='button') 헨릭 인터뷰 동영상 재생(전체화면)
-    .view_point
+      a.ir(href='', role='button') 헨릭 인터뷰 동영상 재생(전체화면)
+    #view_point
       h3
         span VIEW POINT
       ul
@@ -121,7 +126,7 @@ block section
             br
             | A/W 2008 Collection'의 런웨이를 재연출하여, 관람객들에게 패션쇼의 주인공이 되어보는 특별한 경험을 선사합니다.
           cite The Mint Institute A/W 2008 Collection ©Henrik Vibskov
-    .photo_gallery
+    #photo_gallery
       h3
         span PHOTO GALLERY
       ul
@@ -153,7 +158,7 @@ block section
         span <em>1</em> / 8
         a.prev
         a.next
-      .controls
+      .gallery_controls
         a.prev
         a.next
 
