@@ -1,0 +1,53 @@
+@import part/config/setting
+
+.lnb
+  width: 1184px
+  height: 100vh
+  margin: 0 auto
+  color: #595959
+  a
+    color: #595959
+  li
+    float: left
+    width: calc( ( 100% - 90px ) / 4 )
+    position: relative
+    + li
+      margin-left: 30px
+    ul li
+      float: none
+      width: 100%
+      margin: 0
+
+.lnb_title
+  font-size: 21px
+  color: #000
+  margin-bottom: 20px
+  display: block
+  border-bottom: 1px solid #000000
+
+._top
+  border-bottom: 1px solid #909090
+  padding-bottom: 15px
+
+._mid
+  border-bottom: 1px solid #909090
+  padding-top: 15px
+  padding-bottom: 15px
+
+._bottom
+  padding-top: 25px
+
+.lnb
+  h5
+    font-size: 14px
+    margin-bottom: 10px
+    color: #fff
+  p
+    line-height: 18px
+  .more
+    position: absolute
+    top: 6px
+    right: 0
+    padding-right: 15px
+    display: block
+    background: url("../image/icon_common.png") no-repeat -100px -139px

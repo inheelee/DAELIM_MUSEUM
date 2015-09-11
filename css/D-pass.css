@@ -144,8 +144,25 @@ select, input, textarea {
 	color: #151515;
 	border-bottom: 2px solid #151515;
 	font-size: 16px;
+}
+.reservation_route{
+	border: 1px solid #ccc;
+	width: 100%;
+	height: 
+}
+.reservation_route ul{
+	overflow: hidden;
+}
+.reservation_route li{
+	float: left;
+	w
 
 }
+.reservation_route li+li{
+	margin-left: 15px;
+}
+
+
 /* title02 */
 .title02{
 	overflow: hidden;

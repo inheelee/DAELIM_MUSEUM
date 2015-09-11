@@ -1,8 +1,12 @@
+#fnb
+  margin: 0 auto
+  width: 1184px
+
 footer
   background-color: #222222
   padding-left: 42px
   padding-right: 42px
-  padding-top: 50px
+  padding-top: 30px
 
 span
   color: #909090
@@ -10,7 +14,8 @@ span
 h6
   margin-bottom: 10px
   a
-    font-size: 16px
+    font-size: 18px
+    font-weight: 300
     color: #ffffff
 
 ul
@@ -19,7 +24,8 @@ ul
 .footer_top
   padding-bottom: 50px
   li
-    width: 340px
+    box-sizing: border-box
+    width: calc(100%/3)
     float: left
     span
       display: block
@@ -28,7 +34,7 @@ ul
       margin-bottom: 10px
     + li
       padding-left: 20px
-      border-left: 1px solid #909090
+      border-left: 1px solid #373737
 
 .fnb::after
   content: ''
@@ -36,12 +42,39 @@ ul
   clear: both
 
 .footer_bottom
-  border-top: 1px solid #909090
+  border-top: 1px solid #373737
   padding-top: 30px
   padding-bottom: 50px
 
 .footer_nav li
   float: left
-
-.fa
+.sns
+  a
+    
+i
   color: #909090
+  font-style: normal
+  display: inline-block
+
+i::before
+  display: block
+  margin-right: 20px
+
+.footer_nav
+  margin-bottom: 15px
+
+.footer_nav a
+  color: #fff
+  padding-right: 10px
+
+.footer_nav li + li a
+  padding-left: 10px
+  padding-right: 10px
+  color: #909090
+  border-left: 1px solid #373737
+
+.footer_nav a:hover
+  color: #fff
+
+.address *
+  margin-right: 10px

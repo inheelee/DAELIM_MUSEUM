@@ -6,11 +6,11 @@ var gulp = require('gulp'),
 	// CSS / ruby Sass  ----------------------------------- */
 	rubySass    = require('gulp-ruby-sass'),
 	filter = require('gulp-filter'),
-	mq = require('gulp-combine-mq')
 	sourcemaps  = require('gulp-sourcemaps'),
 
 	imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant'),
+	compass =require('gulp-compass'),
 
 	/* Browser server sync -------------------------------- */
 	browserSync = require('browser-sync'),
@@ -35,6 +35,8 @@ var config = {
 		'default-encoding' : 'utf-8',    // Windows 환경에서 CP949 오류 발생 시
 		'style'            : 'expanded', // compact, compressed, nested, expanded
 		'sourcemap'        : true,
+		'compass'          : true,
+		'require'          : ['bourbon', 'susy']
 		// 'no-cache'         : true
 	},
 	'ruby_sass_sourcemaps': {
@@ -61,7 +63,7 @@ var config = {
 gulp.task('default', [
 	'jade',
 	'sass',
-	'image',
+	// 'image',
 ], function() {
 	browserSync(config.browserSync)
 	gulp.start('watch');
@@ -87,10 +89,8 @@ gulp.task('jade', function() {
 gulp.task('sass', function() {
 	// gulp-ruby-sass 사용 시에는 디렉토리 명만 입력할 것!
 	return rubySass('src/sass', config.ruby_sass)
-
 		.on('error', rubySass.logError)
 		.pipe( sourcemaps.write(config.ruby_sass_sourcemaps.dir, config.ruby_sass_sourcemaps.options) )
-		// .pipe(mq())
 		.pipe( gulp.dest('dist/css') )
 		.pipe( filter('**/*.css') )
 		.pipe( reload({stream: true}) );
