@@ -99,57 +99,11 @@ select, input, textarea {
 	padding-top: 13px;
 	color: #373737;
 }
-/* banner */
-.banner{
-	width: 1184px;
-	height: 371px;
-}
-.banner *{
-	display: block;
-}
-.banner a{overflow: hidden;}
-.banner a img{
-	float: left;
-}
-.banner a div{
-	background-color:#f4f4f4;
-	width: 535px;
-	height: 288px;
-	float: left;
-	padding: 41px 27px 41px 30px;
-	letter-spacing: -1px;
-	position: relative;
-}
-.banner a div span{
-	font-size: 14px;
-	color: #595959;
-}
-.banner a div em{
-	font-size: 30px;
-	color: #151515;
-	padding-top: 17px;
-	line-height: 38px;
-	font-style: normal;
-}
-.banner a div p{
-	color: #595959;
-	line-height: 22px;
-	font-size: 14px;
-	padding-top: 15px;}
-.banner a div span:last-child{
-	position: absolute;
-	bottom: 41px;
-	left: 30px;
-	width: 80px;
-	color: #151515;
-	border-bottom: 2px solid #151515;
-	font-size: 16px;
 
-}
 /* title02 */
 .title02{
 	overflow: hidden;
-	padding: 55px 0 20px 0;
+	padding-bottom: 20px;
 	vertical-align: top;
 }
 .title02 h2{
@@ -162,7 +116,7 @@ select, input, textarea {
 	content: '';
 	clear: both;
 }
-/* 기간선택*/
+/* 전시선택*/
 #exhibit_select{
 	float: right;
 }

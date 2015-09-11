@@ -150,43 +150,21 @@ select, input, textarea {
 .title02{
 	overflow: hidden;
 	padding: 55px 0 20px 0;
-	vertical-align: top;
+
 }
-.title02 h2{
-	font-size: 27px;
-	color: #151515;
-	font-weight: 300;
+.title02 ul li{
 	float: left;
+	font-size: 16px;
+
 }
-.title02::after{
-	content: '';
-	clear: both;
+.title02 ul li:first-child{
+	color: #151515;
 }
-/* 기간선택*/
-#exhibit_select{
-	float: right;
+.title02 ul li+li{
+	margin-left: 40px;
+	color: #a8a8a8;
 }
-select{
-	min-width: 200px;
-	height: 30px;
-	vertical-align: top;
-}
-#exhibit_select button{
-	display: inline-block;
-	padding: 5px 15px;
-	text-align: center;
-	border: 1px solid #404040;
-	background-color: #686868;
-	font-size: 14px;
-	color: #fff;
-}
-#exhibit_select button:hover{
-	cursor: pointer;
-	text-decoration: none;
-	color: #fff;
-	border: 1px solid #151515;
-	background-color: #151515;
-}
+
 /* section */
 .section{
 	width: 1184px;
