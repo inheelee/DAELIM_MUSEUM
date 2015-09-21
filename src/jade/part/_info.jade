@@ -33,115 +33,148 @@ include pages/_document_head
 			include pages/scripts/_scripts_head
 
 	body
-		.info
-			.banner
-				img(src="image/info_vist/info_banner.jpg", alt="")
-				strong 입장부터 관람 방법까지, 미술관 관람에 대한 모든 것
+		.banner
+			h2 관람 안내
+			p 입장부터 관람방법까지, 미술관 관람에 대한 모든 것
+		ul.menu
+			li.first
+				a(href="") 관람 안내
+			li
+				a(href="") 미술관 소개
+			li
+				a(href="") 오시는 길
 
-			.info_menu
-				ul
-					li
-						a(href="") 관람 안내
-					li
-						a(href="") 미술관 소개
-					li
-						a(href="") 오시는 길
-			.step1
-				h2 STEP 1.관람 시간 및 요금 확인하고, 온라인 회원 가입하자!
-				strong 관람 시간
-				p 매표는 전시 종료 30분 전에 마감됩니다.
-				p 매주 월요일, 설/추석 연휴는 휴관합니다.
-				strong 관람 요금
-					table
-						thead
-							tr
-								th 관람연령
-								th 일반
-								th 할인
-						tbody
-							tr
-								th 성인 
-								td ₩5,000
-								td ₩4,000
-								td 
-									ul
-										strong 할인적용
-										li 온라인 회원
-										li 10인 이상 단체관람
-										li 65세 이상 경로우대	
-										li 장애인(복지카드 소지자 한해서 적용)
-							tr
-								th 학생 (초/중/고)
-								td ₩3,000
-								td ₩2,000
-							tr
-								th 미취학아동
-								td ₩2,000
-								td ₩1,000
-				.top_wrapper
-					.tip1
-						h2 온라인 회원이 되면, 전시 입장료 20% 할인!
-						strong 미술관 이벤트 초대 + 미술관 정보 관련 e-뉴스레터 발송
-						p 전시 입장료 할인은 온라인 회원 본인에 한해서만 적용 
-						p 미술관 방문 시 대림미술관 모바일 앱 로그인 후 할인 적용
-						a(role="btn").bottom_box 온라인 회원 가입하기
-					.tip2
-						h2 전시를 인터파크에서 예매하면</br>대기시간 없이</br>바로 입장!
-						a(role="btn").bottom_box 전시 예매하기
-			.step2
-				h2 STEP 2. 더욱 특별해진 D MEMBERSHIP </br> 가입하고 풍성한 혜택 받자!
+		.step1
+			h2 STEP 1. 관람 시간 및 요금 확인하고, 온라인 회원 가입하자!
+			h3 관람 시간 
+			strong 화-일요일 10:00AM - 6:00PM / 목, 토요일 (연장 개관) 10:00AM - 8:00PM
+			p 매표는 전시 종료 30분 전에 마감됩니다.</br>매주 월요일, 설/추석 연휴는 휴관합니다.
+			h3 관람 요금
+			table
+				thead
+					tr
+						th.col1.row1(scope="col") 
+							span 관람연령
+						th.col2.row1(scope="col") 
+							span 일반
+						th.table_col.row1(scope="col") 
+							span 할인
+				tbody
+					tr
+						th.col1.row2(scope="row") 
+							span 성인
+							span ( 만 19세 이상 )
+						td.col2.row2 
+							span ₩5,000
+						td.col3.row2 
+							span ₩4,000
+						td.sale_td.row2 
+							span 할인적용
+							ul
+								li 온라인 회원
+								li 10인 이상 단체 관람
+								li 65세 이상 경로우대
+								li 장애인(복지카드 소지자 한해서 적용)
+					tr
+						th.col1.row3(scope="row") 
+							span 학생(초/중/고)
+							span ( 8세 - 18세 )
+						td.col2.row3 
+							span ₩3,000
+						td.col3.row3 
+							span ₩2,000
+					tr
+						th.col1.row4(scope="row") 
+							span 미취학 아동
+							span ( 3세 - 7세 	)
+						td.col2.row4 
+							span ₩2,000
+						td.col3.row4 
+							span ₩1,000
+		.tip_b
+			ul.tip
+				li.tip1
+					span TIP 1
+					h2 온라인 회원이 되면, 전시 입장료 20% 할인!	
+					strong 미술관 이벤트 초대 + 미술관 정보 관련 e-뉴스레터 발송
+					p 전시 입장료 할인은 온라인 회원 본인에 한해서만 적용</br>미술관 방문 시 대림미술관 모바일 앱 로그인 후 할인 적용
+					.btn
+						a(href="" role="btn") 온라인 회원 가입하기
+				li.tip2
+					span TIP 2
+					h2 전시를 인터파크에서 예매하면</br>대기시간 없이</br>바로 입장!
+					.btn
+						a(href="" role="btn") 전시 예매하기
+		.step2
+			h2 STEP 2. 더욱 특별해진 D MEMBERSHIP</br>가입하고 풍성한 혜택 받자!
+			.infographic
 				img(src="image/info_vist/info_11.png", alt="")
-				a(role="btn").bottom_box D MEMBERSHIP구매하기
-				.exh_count
-					p 전시 3회: 대림미술관(통의동) 및 D뮤지엄 전시 모두 관람 가능, 동일 전시 재관람 가능</br>공연 or 강연 1회: D패스를 비롯한 톡톡 튀는 공연과 강연 중 선택 1회</br>아메리카노 1잔: 콜롬비아 원두의 풍미 가득한 D카페 아메리카노 1잔</br>스페셜 혜택:제휴사 연계 할인 및 추가 서비스 제공 (추후 업데이트 예정)
-				p D멤버십 카드는 미술관 및 인터파크에서 구입할 수 있습니다.
-				p 구입하신 후 대림미술관 홈페이지와 모바일앱에서 발급 받으신 카드 등록 후(온라인 회원 가입 필수)사용 가능 합니다.
-
-				.dmembershipsign
-					h2 D MEMBERSHIP 가입 방법
+				.btn
+					a(href="" role="btn") D MEMBERSHIP 구매하기
+			.adventage
+				strong 전시 3회 : 대림미술관(통의동) 및 D뮤지엄 전시 모두 관람 가능, 동일 전시 재관람 가능 
+				strong 공연 or 강연 1회 : D패스를 비롯한 톡톡 튀는 공연과 강연 중 선택 1회
+				strong 아메리카노 1잔 : 콜롬비아 원두의 풍미 가득한 D카페 아메리카노 1잔 
+				strong 스페셜 혜택 : 제휴사 연계 할인 및 추가 서비스 제공 (추후 업데이트 예정)
+			p D멤버십 카드는 미술관 및 인터파크에서 구입하실 수 있습니다.</br>구입하신 후 대림미술관 홈페이지와 모바일앱에서 발급 받으신 카드 등록 후(온라인 회원 가입 필수) 사용 가능합니다.
+		.d_membership
+			h2 D MEMBERSHIP 가입 
+			ul.a_step
+				li.a_step1
+					.step1_img
 					h3 STEP 1. 온라인 회원가입
-					p 대림미술관 어플리케이션을 다운 받아</br>온라인 회원 가입합니다.
-
+					p 대림미술관 어플리케이션을 다운 받아 </br>온라인 회원 가입합니다.
+				li.a_step2
+					.step2_img
 					h3 STEP 2. 카드 등록하기
-					p D MEMBERSHIP 카드를</br>등록합니다.
-
+					p D MEMBERSHIP 카드를 </br>등록합니다.
+				li.a_step3
+					.step3_img
 					h3 STEP 3. 멤버십 가입 완료
-					p 특별하고 다양한 맴버십 서비스를</br>이용하실 수 있습니다.
+					p 특별하고 다양한 멤버십 서비스를 </br>이용하실 수 있습니다.
+		.step3
+			h2 STEP 3. 손 안의 미술관 모바일 APP으로 즐거움을 나누자!
+			ul.share_app
+				li.share_app1
+					.share_img1
+					h3 1. APP 다운로드 &amp; D 멤버십 등록
+					p 무료로 다운로드 받고, 구입한 D 멤버십 카드를</br>등록하여, 더욱 쉽고 편리하게 즐기자
 
-			.step3
-				h2 손 안의 미술관 모바일 APP으로 즐거움을 나누자!
-
-				h3 1. APP 다운로드 &amp; D 멤버십 등록
-				p 무료로 다운로드 받고, 구입한 D 멤버십 카드를</br>등록하여, 더욱 쉽고 편리하게 즐기자
-
-				h3 2. 모바일 APP 쿠폰
-				p 온라인 회원을 위한 Special gift</br>이제 APP에서 쿠폰 선물 다운로드 받자
-
-				h3 3. 모바일 투어
-				p 언제 어디서나 이용가능 한</br>수석 큐레이터의 친절한 전시 설명 듣기
-
-				h3 4. 슈팅스튜디오
-				p D라운지 슈팅스튜디오에서 촬영한 사진을</br>무료로 다운로드 받고 친구들과 공유
-
-				h3 5. D 스토리
-				p 전시 준비 에피소드, 작가 인터뷰, 칼럼 등</br>전시 관련 다양한 비하인드 스토리
-
-			.step4
-				h2 STEP 4. 가이드 투어와 함께 전시를 재미있게 즐기자!
-				p 가이드 투어 - 전시를 200% 이해하는 방법 </br>모바일 앱, 그리고 도슨트가 들려주는 작품 속 숨겨진 이야기
-
-				ul.tour_info
-					li
-						img(src="image/info_vist/info_15.jpg", alt="")
-						h5 모바일 투어
-						p 헨릭 빕스코브, 그리고 수석 큐레이터의 Vibs FM! </br> 전시를 만든 두 사람이 전시 작품에 대한 이야기를 </br> 들려줍니다.
-					li
-						img(src="image/info_vist/info_16.jpg", alt="")
-						h5 정규 도슨트 투어
-						p 매시 정각, 도슨트와 함께하는 전시 감상.</br>이번 전시, 조금 다르게 보고싶다면,</br>Team VIBS가 된 도슨트를 찾으세요.</br>진행 : 매시 정각</br>(11시, 12시, 1시, 2시, 3시, 4시, 5시)
-						span * 정규 도슨트 투어는 미술관 사정에 따라 </br>취소될 수 있습니다.
-					li
-						img(src="image/info_vist/info_17.jpg", alt="")
-						h5 스페셜 도슨트 투어
-						p 10인 이상의 어린이/청소년/성인 단체라면, </br>원하는 시간에, 단체 눈높이에 맞춘 스페셜 투어를</br>경험해 보세요.</br>신청안내 : 사전 예약제 </br>- 최소 3일 전 하단 '예약하기'를 통해 신청하시면</br>투어 담당자가 확약 전화를 드립니다.
-						a(href="") 전시 단체관람 예약하기
+				li.share_app2
+					.share_img2
+					h3 2. 모바일 APP 쿠폰
+					p 온라인 회원을 위한 Special Gift </br>이제 APP에서 쿠폰 선물 다운로드 받자
+				li.share_app3
+					.share_img3
+					h3 3. 모바일 투어
+					p 언제 어디서나 이용가능 한</br>수석큐레이터의 친절한 전시 설명 듣기
+				li.share_app4
+					.share_img4
+					h3 4. 슈팅스튜디오
+					p D라운지 슈팅스튜디오에서 촬영한 사진을 </br>무료로 다운로드 받고 친구들과 공유
+				li.share_app5
+					.share_img5
+					h3 5. D 스토리
+					p 전시 준비 에피소드, 작가 인터뷰, 칼럼 등</br>전시 관련 다양한 비하인드 스토리
+		.step4
+			h2 STEP 4. 가이드 투어와 함께 전시를 재미있게 즐기자!
+			strong 가이드 투어 - 전시를 200% 이해하는 방법 </br>모바일 앱, 그리고 도슨트가 들려주는 작품 속 숨겨진 이야기
+			ul.tour
+				li.tour1
+					.tour_img1
+					h3 모바일 투어
+					strong 헨릭 빕스코브, 그리고 수석 큐레이터의 Vibs FM!
+					p 전시를 만든 두 사람이 전시 작품에 대한 이야기를</br>들려줍니다.
+				li.tour2
+					.tour_img2
+					h3 정규 도슨트 투어
+					strong 매시 정각, 도슨트와 함께하는 전시 감상.
+					p 이번 전시, 조금 다르게 보고싶다면,</br>Team VIBS가 된 도슨트를 찾으세요.
+					p 진행 : 매시 정각</br>(11시, 12시, 1시, 2시, 3시, 4시, 5시)
+					span * 정규 도슨트 투어는 미술관 사정에 따라</br>취소될 수 있습니다.
+				li.tour3
+					.tour_img3
+					h3 스페셜 도슨트 투어
+					p 10인 이상의 어린이/청소년/성인 단체라면, </br>원하는 시간에, 단체 눈높이에 맞춘 스페셜 투어를</br>경험해 보세요.
+					p 신청안내 : 사전 예약제 </br>- 최소 3일 전 하단 '예약하기'를 통해 신청하시면</br>투어 담당자가 확약 전화를 드립니다.
+					a(href="", role="btn") 전시 단체관람 예약하기
