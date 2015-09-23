@@ -1,0 +1,112 @@
+// breadcrumb
+
+.breadcrumb
+  width: 1184px
+  margin: 10px auto
+  text-align: right
+  font-size: 12px
+  a::after
+    content: ''
+    display: inline-block
+    width: 5px
+    height: 10px
+    margin-left: 10px
+    margin-right: 7px
+    vertical-align: -1px
+    background: url('../image/icon_common.png') no-repeat -60px -30px
+  span
+    text-decoration: underline
+
+// curr_exhibition
+
+.curr_exhibition
+  width: 100%
+  height: 478px
+  background: url('../image/curr_exhibit_banner2.jpg') no-repeat 50% 50%
+
+.inner
+  width: 1184px
+  height: inherit
+  margin: 0 auto
+  position: relative
+
+.curr_exhibition ul
+  position: absolute
+  font-size: 14px
+  letter-spacing: -1px
+  color: #fff
+  bottom: 20px
+  left: 20px
+  li + li
+    margin-top: 5px
+
+// main
+
+.lnb
+  background: #222222
+  ul
+    width: 1184px
+    margin: 0 auto
+    padding: 15px 0
+    text-align: center
+    li
+      display: inline-block
+      + li
+        margin-left: 75px
+  a
+    font-size: 16px
+    letter-spacing: -1px
+    color: #909090
+    &.visit
+      color: #fff
+
+// section.about_artist
+
+.about_artist
+  width: 1088px
+  margin: 0 auto
+  padding-top: 60px
+  box-sizing: border-box
+  h3
+    color: #151515
+    font-size: 44px
+    font-weight: 300
+    text-align: center
+    margin-bottom: 20px
+  p
+    font-size: 14px
+    color: #595959
+    position: relative
+    line-height: 1.7
+    text-align: left
+    + p
+      width: 650px
+      font-size: 19px
+      color: #151515
+      margin: 55px auto
+      text-align: center
+      font-style: italic
+      line-height: 1.8
+      &::before
+        content: ''
+        display: block
+        width: 22px
+        height: 17px
+        background: url('../image/icon_common.png') -50px -210px
+        position: absolute
+        top: 0
+        left: 0
+      &::after
+        content: ''
+        display: block
+        width: 22px
+        height: 17px
+        background: url('../image/icon_common.png') -80px -210px
+        position: absolute
+        bottom: 60px
+        right: 0
+    em
+      font-size: 16px
+      color: #595959
+      display: block
+      margin-top: 25px

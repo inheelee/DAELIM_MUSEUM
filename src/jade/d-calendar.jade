@@ -1,0 +1,138 @@
+extends part/_main_page_template
+
+block stylesheets
+	link(rel="stylesheet", href="css/d-calendar.css")
+
+block banner
+	.breadcrumb
+		a(href='') 홈
+		span  D CALENDAR
+
+block contents
+
+block section
+	section.d-calendar
+		header
+			h1 CALENDAR
+				strong 미술관에서 일어나는 다채로운 전시, 행사 및 프로그램 스케줄
+			p 전시와 D PASS, GOOD NIGHT, 이벤트 등<br>다양한 프로그램 일정을 한 눈에 확인!
+
+		.calendar-banner
+			h2.a11y-hidden 미술관에서 진행 중 프로그램
+			ul.clearfix
+				li
+					.banner-content
+						h3.ir DAELIM MUSEUM
+						h4 헨릭 빕스코브 - 패션과 예술, 경계를 
+						span 2015.07.09 - 2015.12.31
+						a(href="") 자세히 보기
+				li
+					.banner-content
+						h3.ir D MUSEUM
+						h4 대림미술관의 또 하나의 시작
+						a(href="") 자세히 보기
+				li
+					.banner-content
+						h3.ir 구슬모아 당구장
+						h4 조규형: 그림 서체 - 키보드 장단에
+						span 2015.09.05 - 2015.10.04
+						a(href="") 자세히 보기
+
+		.calendar-event
+			.inner
+				.month_btn
+					h2 2015년 09월
+					a(href="#").cal-prev.ir 이전달
+					a(href="#").cal-next.ir 다음달
+
+				.calendar-bar
+					ul
+						li
+							a(href="#") 01
+						li
+							a(href="#") 02
+						li
+							a(href="#") 03
+						li
+							a(href="#") 04
+						li.d-sat
+							span SAT
+							a(href="#") 05
+						li.d-sun
+							span SUN
+							a(href="#") 06
+						li
+							a(href="#") 07
+						li
+							a(href="#") 08
+						li
+							a(href="#") 09
+						li
+							a(href="#") 10
+						li
+							a(href="#") 11
+						li.d-sat
+							span SAT
+							a(href="#") 12
+						li.d-sun
+							span SUN
+							a(href="#") 13
+						li
+							a(href="#") 14
+						li
+							a(href="#") 15
+						li
+							a(href="#") 16
+						li
+							a(href="#") 17
+						li
+							a(href="#") 18
+						li.d-sat
+							span SAT
+							a(href="#") 19
+						li.d-sun
+							span SUN
+							a(href="#") 20
+						li
+							a(href="#") 21
+						li
+							a(href="#") 22
+						li.d-select-first.d-today
+							a(href="#") 23
+						li.d-select
+							a(href="#") 24
+						li.d-select
+							a(href="#") 25
+						li.d-sat.d-select
+							span SAT
+							a(href="#") 26
+						li.d-sun.d-select
+							span SUN
+							a(href="#") 27
+						li.d-select
+							a(href="#") 28
+						li.d-select-last
+							a(href="#") 29
+						li
+							a(href="#") 30
+						li
+							a(href="#") 31
+
+				.today-event
+					strong * 매주 월요일은 휴관일 입니다.
+					h3.a11y-hidden 오늘의 프로그램 일정
+
+					ul.clearfix
+						li
+							a(href="#")
+								h4 구슬모아 당구장
+								p 2015.09.24 THU 6:30PM-8:00PM
+								h5 [당구장 NIGHT] 작가 워크샵: 조규형
+								span 자세히 보기
+						li
+							a(href="#")
+								h4 DAELIM MUSEUM
+								p 2015.09.23 - 2015.09.23
+								h5 9/23(수) 세상의 모든 취준생들이여, 모여라! '뮤지엄 게더링 데이' 이벤트
+								span 자세히 보기
+

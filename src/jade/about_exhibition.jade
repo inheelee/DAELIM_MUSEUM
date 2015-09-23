@@ -1,0 +1,164 @@
+extends part/_main_page_template
+
+block stylesheets
+  link(rel="stylesheet", href="css/about_exhibition.css")
+
+block banner
+  .breadcrumb
+    a(href='') 홈
+    a(href='') EXHIBITION
+    span 현재전시
+  .curr_exhibition
+    .inner
+      h2.a11y-hidden HENRIK VIBSKOV-FABRICATE
+      p.a11y-hidden 헨릭 빕스코브 - 패션과 예술, 경계를 허무는 아티스트
+      strong.a11y-hidden 2015.07.09 - 2015.12.31
+      ul
+        li 주최 | 대림미술관
+        li 후원 | 대림그룹, 삼성화재, 현대해상, 메리츠화재, 동부생명, 교보생명, 삼성생명, 서울특별시, 로이코
+  .lnb
+    h2.a11y-hidden 현재전시 네비게이션
+    ul
+      li
+        a.visit(href='/') 전시소개
+      li
+        a(href='about_artist.html') 작가소개
+      li
+        a(href='') 전시연계 프로그램
+      li
+        a(href='') 뮤지엄샵
+
+block contents
+
+block section
+  section.about_exhibition
+    nav.exhibition_lnb
+      a.visit(href="#about_exhibit")
+      a(href="#artist_interview")
+      a(href="#view_point")
+      a(href="#photo_gallery")
+    #about_exhibit
+      h3
+        span ABOUT THE EXHIBITION
+      h4 헨릭 빕스코브-패션과 예술, 경계를 허무는 아티스트
+      p
+        | 대림미술관은 2015년 7월 9일부터 12월 31일까지 패션 디자이너이자 아티스트 헨릭 빕스코브(HENRIK VIBSKOV)의 전시 <헨릭 빕스코브-패션과 예술, 경계를 허무는 아티스트>(HENRIK VIBSKOV - FABRICATE)를 개최합니다. 파리 패션 위크에서 매년 컬렉션을 발표하는 유일한 북유럽 패션 디자이너 헨릭 빕스코브는 끊임없이 형식을 파괴하고 예기치 못한 충격적인 방식으로 그만의 독창적인 패션쇼를 선보이며 새로운 컬렉션이 발표될 때마다 뜨거운 관심과 화제를 불러일으키고 있습니다. 그는 패션뿐만 아니라 사진, 설치, 영상, 퍼포먼스 등 순수예술의 영역에서 꾸준히 작업을 진행해 왔으며, 세계 유수의 미술관에서 다수의 전시를 통해 아티스트로서의 무한한 가능성을 인정받았습니다.
+      p
+        | 이번 전시는 새롭게 재연출한 런웨이와 데뷔부터 현재까지 발표된 대표 컬렉션, 그리고 다양한 장르를 아우르는 주요작 및 신작을 포함한 총 300여 점의 작품을 한자리에서 소개하고, 특정 장르의 형식적 한계를 깨기 위한 시도와 변화를 두려워하지 않는 헨릭 빕스코브의 작업 방식을 통해 모든 창작의 과정을 놀이처럼 즐기는 적극적인 멀티 크리에이터의 모습을 제시하고자 합니다. 다양한 예술적 영감과 관심사를 하나로 아우르는 도구로써, 패션이 단순히 ‘입기 위한’ 옷이 아닌 ‘자유롭고 열린 표현’을 위한 매체로 확장될 수 있는 가능성을 선보이는 전시 <헨릭 빕스코브-패션과 예술, 경계를 허무는 아티스트>는 위트 넘치는 감각의 놀이터에서 관람객들이 보다 열린 관점으로 새롭게‘ 패션’을 바라보고, 직접 그의 예술 세계를 경험해보는 특별한 기회가 될 것입니다.
+    #artist_interview
+      h3
+        span ARTIST'S INTERVIEW
+      a.ir(href='', role='button') 헨릭 인터뷰 동영상 재생(전체화면)
+    #view_point
+      h3
+        span VIEW POINT
+      ul
+        li
+          img(src='image/viewpoint1.jpg', height='418', width='236')
+          p.list_num
+            | POINT
+            strong 01
+          h4
+            | 패션 디자이너로서의
+            br
+            | 헨릭 빕스코브
+            span
+              | HENRIK VIBSKOV
+              br
+              | AS A FASHION DESIGNER
+          p
+            | 헨릭 빕스코브의 과거와 현재를
+            br
+            | 대표하는 런웨이와 컬렉션을 통해
+            br
+            | 패션 디자이너로서의 헨릭
+            br
+            | 빕스코브를 소개합니다. 2015년 6월
+            br
+            | 파리 패션 위크에서 발표한 헨릭
+            br
+            | 빕스코브의 2016년 S/S 런웨이와
+            br
+            | 컬렉션을 한국에서 동시에 공개하고,
+            br
+            | 쉽게 경험할 수 없는 패션쇼의 -
+            br
+            | 백 스테이지를 새롭게 재현합니다. 그리고 2003년부터 현재까지 발표해 온 헨릭
+            br
+            | 빕스코브의 대표 의상 40여 벌이 파격적인 퍼포먼스로 주목 받았던 'The Big Wet Shiny Boobies S/S 2007 Collection’의 런웨이에 사용되었던 가슴을 모티브로 한
+            br
+            | 오브제들과 함께 전시됩니다.
+          cite The Big Wet Shiny Boobies S/S 2007 Collection ©Henrik Vibskov
+        li
+          img(src='image/viewpoint2.jpg', height='207', width='520')
+          p.list_num
+            | POINT
+            strong 02
+          h4 아티스트로서의 헨릭 빕스코브
+            span HENRIK VIBSKOV AS AN ARTIST
+          p
+            | 헨릭 빕스코브의 ‘신체’에 대한 관심, 옷을 만드는 재료와 컬러, 그리고 제작방식에
+            br
+            | 대한 실험과 연구를 반영한 다양한 장르의 작품들 - 사진, 그래픽, 텍스타일, 설치 등 -
+            br
+            | 을 통해 아티스트로서의 헨릭 빕스코브를 소개합니다. 헨릭 빕스코브의 패션이
+            br
+            | 완성되는 과정에 영감적인 재료로 사용된 중요작들과 이번 전시를 위해 특별히
+            br
+            | 제작한 신작들이 함께 공개되며, 헨릭 빕스코브의 과거부터 현재까지의
+            br
+            | 모든 작업 과정과 결과물을 기록한 200여 점의 사진 작품들도 함께 전시됩니다.
+          cite Henrik Vibskov's Photo Wall, 2004 - 2015 ©Henrik Vibskov
+        li
+          img(src='image/viewpoint3.jpg', height='167', width='1088')
+          p.list_num
+            | POINT
+            strong 03
+          h4 헨릭 빕스코브의 세계
+            span
+              | THE UNIVERSE OF
+              br
+              | HENRIK VIBSKOV
+          p
+            | 패션과 예술이 결합하여 완성된 헨릭 빕스코브의 감각적인 세계를 직접 경험할 수 있는 런웨이를 새롭게 구현합니다. 특히
+            br
+            | 후각과 미각이라는 요소를 패션쇼에 최초로 적용시키며 패션에서 시도되지 않은 새로운 관객 경험을 선사한 'The Mint Institute
+            br
+            | A/W 2008 Collection'의 런웨이를 재연출하여, 관람객들에게 패션쇼의 주인공이 되어보는 특별한 경험을 선사합니다.
+          cite The Mint Institute A/W 2008 Collection ©Henrik Vibskov
+    #photo_gallery
+      h3
+        span PHOTO GALLERY
+      ul
+        li
+          img(src='image/curr_gallery_1.jpg', alt, height='498', width='1088')
+          cite The Big Wet Shiny Boobies S/S 2007 Collection
+        li.select_view
+          img(src='image/curr_gallery_2.jpg', alt, height='498', width='1088')
+          cite The Stiff Neck Chamber A/W 2013 Collection
+        li
+          img(src='image/curr_gallery_3.jpg', alt, height='498', width='1088')
+          cite Face Wool Explosion, 2013
+        li
+          img(src='image/curr_gallery_4.jpg', alt, height='498', width='1088')
+          cite Facial Jigsaw Puzzle, 2015
+        li
+          img(src='image/curr_gallery_5.jpg', alt, height='498', width='1088')
+          cite Fragile Soap Bodies, 2013
+        li
+          img(src='image/curr_gallery_6.jpg', alt, height='498', width='1088')
+          cite Russian Boys, 2013
+        li
+          img(src='image/curr_gallery_7.jpg', alt, height='498', width='1088')
+          cite Popeye-Death by Penises, 2014
+        li
+          img(src='image/curr_gallery_8.jpg', alt, height='498', width='1088')
+          cite Head Jungle 1,2,3, 2015
+      .state
+        span <em>1</em> / 8
+        a.prev
+        a.next
+      .gallery_controls
+        a.prev
+        a.next
+
