@@ -1,0 +1,64 @@
+extends part/_main_page_template
+
+block stylesheets
+   link(rel="stylesheet", href="css/d_wallpaper.css")
+
+block banner
+
+block contents
+
+block section
+    .wrap
+      .breadcrumb
+        a(href='') 홈
+        a(href='') LIBRARY
+        span D WALLPAPER
+      .title01
+        h1
+          img(src='image/DW_logo.png', alt='D_WALLPAPER', width='288', height='34')
+        strong 작가들의 작품을 내 손안에 쏙
+        span 구슬모아 당구장 참여작가들의 각양각색 작품 이미지를 배경화면으로
+      .title02
+        h2 전체 D WALLPAPER
+        #exhibit_select
+          select(name='', id='', title='전시선택란')
+            option(value='') 전시 선택
+            option(value='김미수＆김영준: 있음과 없음') 김미수＆김영준: 있음과 없음
+            option(value='제로랩: 사선에 대하여') 제로랩: 사선에 대하여
+            option(value='진달래 & 박우혁: 사자, 마녀 그리고 옷장') 진달래 & 박우혁: 사자, 마녀 그리고 옷장
+            option(value='무나씨: 정말이지너는') 무나씨: 정말이지너는
+          button.btn(href='') 조회
+      .section
+        ul
+          li
+            img(src='image/DW_1.jpg', alt='', width='260', height='260')
+            span 김미수＆amp;김영준: 있음과 없음
+          li
+            img(src='image/DW_2.jpg', alt='', width='260', height='260')
+            span 김미수＆amp;김영준: 있음과 없음
+          li
+            img(src='image/DW_3.jpg', alt='', width='260', height='260')
+            span 제로랩: 사선에 대하여
+          li
+            img(src='image/DW_4.jpg', alt='', width='260', height='260')
+            span 진달래 & 박우혁: 사자, 마녀 그리고 옷장
+        ul
+          li
+            img(src='image/DW_5.jpg', alt='', width='260', height='260')
+            span 빠키: 불완전한 장치
+          li.last
+            img(src='image/DW_6.jpg', alt='', width='260', height='260')
+            span 무나씨: 정말이지너는
+      .pages
+        a(href='') 첫 페이지 바로가기
+        span
+          a.on(href='') 1
+        a(href='') 마지막 페이지 바로가기
+      #search
+        div
+          select(name='', id='', title='기간선택란')
+            option(value='') 전체
+            option(value='제목') 제목
+            option(value='내용') 내용
+          input(type='text', title='검색어 입력란', placeholder='검색어를 입력하세요')
+          button.btn(href='') 검색

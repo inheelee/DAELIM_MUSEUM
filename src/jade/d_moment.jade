@@ -1,0 +1,108 @@
+extends part/_main_page_template
+
+block stylesheets
+   link(rel="stylesheet", href="css/d_moment.css")
+
+block banner
+
+block contents
+
+block section
+    .wrap
+      .breadcrumb
+        a(href='') 홈
+        a(href='') LIBRARY
+        span D MOMENT
+      .title01
+        h1
+          img(src='image/DM_logo.png', alt='D_MOMENT', width='223', height='34')
+        strong 함께 나누는 즐거운 그 순간
+        span 미술관 현장에서 펼쳐지는 생생한 추억, 그리고 이야기
+      .banner
+        a(href='')
+          img(src='image/DM_banner.jpg', alt='조규형의 그림서체-키보드 장단에 변신하는 한글 전시 오프닝', width='592', height='370')
+          div
+            span 구슬모아당구장
+            em <조규형: 그림서체-키보드 장단에 변신하는 한글> 전시 오프닝
+            p
+              | 무더웠던 여름이 어느새 지나가고 선선한 바람과 함께 가을이 왔음을 물씬 느끼게 했던 지난 금요일 저녁, 2015년 구슬모아 당구장의 여섯 번째 전시가 시작되었습니다. 구슬모아 당구장이 준비한 이번 전시는 디자이너이자 스토리텔러인 조규형이 제작한 이야기가 있는 그림체 글꼴을 선보이는 <조규형: 그림 서체 - 키보드 장단에 변신하는 한글> 전시입니다.
+            span 자세히 보기
+      .title02
+        ul
+          li 전체
+          li 대림미술관
+          li D MUSEUM
+          li 구슬모아 당구장
+      .section
+        ul
+          li
+            img(src='image/DM_guseul_3.jpg', alt='', width='260', height='260')
+            span <조규형: 그림서체-키보드 장단에 변신하는 한글> 전시 오프닝
+            em 구슬모아당구장
+          li
+            img(src='image/DM_dealim_1.jpg', alt='', width='260', height='260')
+            span [D PASS] 콘서트: 오진원 트리오
+            em 대림미술관
+          li
+            img(src='image/DM_dealim_2.jpg', alt='', width='260', height='260')
+            span [D PASS] 콘서트: 송인섭트리오
+            em 대림미술관
+          li
+            img(src='image/DM_dealim_3.jpg', alt='', width='260', height='260')
+            span [D PASS] 특별한 진로특강 : 대림미술관 기획자들이 말하는 미술관 사람 되기, A to Z
+            em 대림미술관
+        ul
+          li
+            img(src='image/DM_guseul_1.jpg', alt='', width='260', height='260')
+            span [구슬모아당구장] 김미수&김영준과 함께하는 작가 워크샵
+            em 구슬모아당구장
+          li
+            img(src='image/DM_dealim_4.jpg', alt='', width='260', height='260')
+            span [D PASS] 향기워크숍
+            em 대림미술관
+          li
+            img(src='image/DM_dealim_5.jpg', alt='', width='260', height='260')
+            span [8월의 GOOD NIGHT] 플레이 나잇, 달콤한 동심으로 떠나는 썸머 플레이 가든
+            em 대림미술관
+          li
+            img(src='image/DM_dealim_6.jpg', alt='', width='260', height='260')
+            span [D PASS] 콘서트: 크랜필드
+            em 대림미술관
+        ul
+          li
+            img(src='image/DM_dealim_7.jpg', alt='', width='260', height='260')
+            span [D PASS] 콘서트: 3호선 버터플라이
+            em 대림미술관
+          li
+            img(src='image/DM_guseul_2.jpg', alt='', width='260', height='260')
+            span [구슬모아당구장] 김미수&김영준 전시오프닝
+            em 구슬모아당구장
+          li
+            img(src='image/DM_dealim_8.jpg', alt='', width='260', height='260')
+            span [D PASS] 콘서트: 최고은 X 우주히피
+            em 대림미술관
+          li
+            img(src='image/DM_dealim_9.jpg', alt='', width='260', height='260')
+            span [7월의 GOOD NIGHT] 스타일 나잇, 한여름 밤의 힐링 라운지
+            em 대림미술관
+      .pages
+        a(href='') 첫 페이지 바로가기
+        span
+          a.on(href='') 1
+          a(href='') 2
+          a(href='') 3
+          a(href='') 4
+          a(href='') 5
+          a(href='') 6
+          a(href='') 7
+          a(href='') 8
+          a(href='') 9
+        a(href='') 마지막 페이지 바로가기
+      #search
+        div
+          select(name='', id='', title='기간선택란')
+            option(value='') 전체
+            option(value='제목') 제목
+            option(value='내용') 내용
+          input(type='text', title='검색어 입력란', placeholder='검색어를 입력하세요')
+          button.btn(href='') 검색

@@ -1,0 +1,12 @@
+$('#gnb').hover(function(){
+	if($('.show_menu')==show){
+		$('.show_menu').hide()
+		$('.show_menu').removeClass('.on')
+	}else{
+		$('.show_menu').show();
+		$(this).addClass('.on')
+	}
+},function(){
+	$('.gnb_over').hide();
+	$(this).removeClass('.gnb_on')
+});
