@@ -1,0 +1,112 @@
+// breadcrumb
+.breadcrumb
+  width: 1184px
+  margin: 10px auto
+  text-align: right
+  font-size: 12px
+  a::after
+    content: ''
+    display: inline-block
+    width: 5px
+    height: 10px
+    margin-left: 10px
+    margin-right: 7px
+    vertical-align: -1px
+    background: url('../image/icon_common.png') no-repeat -60px -30px
+  span
+    text-decoration: underline
+
+// #main
+#main
+  margin-top: 38px
+
+.d-news
+  float: left
+  width: 184px
+  margin-top: 10px
+
+  h2
+    width: 184px
+    font-size: 24px
+    color: #222
+    padding-bottom: 22px
+    border-bottom: 2px solid #222
+
+  li
+    + li
+      margin-top: 20px
+
+    &:first-child
+      margin-top: 20px
+
+  a
+    font-size: 16px
+    color: #222
+
+    &:hover
+      text-decoration: underline
+
+    &.d-visit
+      color: #da0b85
+      text-decoration: underline
+
+.d-notice
+  margin-left: 224px
+  margin-bottom: 68px
+
+  h3
+    font-size: 31px
+    color: #222
+    padding-bottom: 22px
+    border-bottom: 2px solid #222
+
+    strong
+      color: #373737
+      font-size: 16px
+      margin-left: 15px
+      padding-left: 15px
+      border-left: 1px solid
+
+  h5
+    padding: 20px 0
+
+  table
+    border-top: 1px solid #222
+    border-bottom: 1px solid #222
+    font-size: 14px
+    th
+      background: #f4f4f4
+      padding: 15px 0
+      text-align: center
+      font-weight: normal
+      &:nth-child(1)
+        width: 57px
+      &:nth-child(2)
+        width: 182px
+      &:nth-child(3)
+        // width: 614px
+      &:nth-child(4)
+        width: 107px
+      + th
+        p
+          border-left: 1px solid #ccc
+    td
+      padding: 15px 0
+      text-align: center
+      &:nth-child(3)
+        text-align: left
+      + td
+        border-left: 1px solid #e5e5e5
+    .notice-highlight
+      background: #f9f9f9
+
+    tr
+      + tr
+        border-top: 1px solid #e5e5e5
+
+  .d-controls
+    text-align: center
+    a
+      float: left
+      width: 30px
+      height: 30px
