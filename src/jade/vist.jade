@@ -1,0 +1,92 @@
+include part/pages/_document_head
+	//- 환경 설정
+	block settings
+		include part/config/_setting
+
+	head
+
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+
+		//- 문자 인코딩
+		meta(charset= encoding)
+
+		//- 문서 타이틀
+		title= page_title
+
+		//- 검색엔진 최적화 SEO
+		block meta_seo
+			include part/pages/head/_meta_seo
+
+		//- 모바일 최적화
+		block meta_viewport
+			meta(name="viewport", content="width=device-width, initial-scale=1")
+
+		//- 메인 스타일링
+		block stylesheets
+			link(rel="stylesheet", href="css/vist.css")
+			link(href=webfont, rel='stylesheet', type='text/css')
+			link(rel="shortcut icon", href="image/icon_favicon.ico")
+			link(href=awesomefont, rel='stylesheet')
+
+		block _scripts_head
+			include part/pages/scripts/_scripts_head
+
+	body
+
+		ul.banner
+			li.controller
+				ul.controller_list
+					li
+						a(href="") 지하철</br>이용시
+					li
+						a(href="") 버스</br>이용시
+					li
+						a(href="") 자가용</br>이용시
+			li.subway
+			li.bus
+			li.owncar
+
+		ul.menu
+			li
+				a(href="") 관람 안내
+			li
+				a(href="") 미술관 소개
+			li.first
+				a(href="") 오시는 길
+
+		div.vist_contents
+			div.address
+				h3 서울특별시 종로구 지하문로4길 21, 대림미술관
+					a.navermap 네이버 지도보기 >
+				strong T. 02-720-0667  F. 02-720-0665
+				strong E. <a href="mailto:info@daelimmuseum.org">info@daelimmuseum.org</a>
+			ul.bmw
+				li
+					h4 지하철 이용시
+					strong 경복궁역 3호선 3번출구
+					p 3번 출구에서 100m 직진<br>스타벅스 경복궁역점 우측 골목길 100m 직진<br>골목길 왼편 대림미술관 도착
+					strong 경복궁역 3호선 4번출구
+					p 4번 출구에서 약 100m 직진<br>경복궁 방향 횡단보도 건너가기 전 왼쪽길<br>코오롱패션디자인학원까지 약 170m 직진<br>코오롱패션디자인학원 왼쪽 골목 진입<br>약 40m 직진 후 대림미술관 도착
+				li
+					h4 버스 이용시
+					strong 서울 지방 경찰청 앞 정류장
+					p 171, 272, 606, 706
+					p 7025
+
+					strong 서울 지방 경찰청 앞 정류장
+					p 7212, 1020, 1711, 7016, 7018
+
+					strong 할리스 커피 앞 정류장
+					p 7212, 1020, 1711, 7016, 7018, 7022
+				li
+					h4 자가용 이용시
+					strong 광화문에서 오는 길
+					p 사직로를 따라 경복궁역 방면으로 직진<br>경복궁역에서 자하문터널 방면으로 우회전<br>자하문로를 따라 150m 이동<br>스타벅스 골목으로 우회전<br>자하문로4길 따라 100m 직진
+
+					strong 사직터널로 오는 길
+					p 사직터널 지나 경복궁역 방면으로 직진<br>경복궁역에서 자하문터널 방면으로 좌회전<br>자하문로를 따라 150m 이동<br>스타벅스 골목으로 우회전<br>자하문로4길 따라 100m 직진
+
+					strong 자하문 터널로 오는 길
+					p 자하문로를 따라 경복궁역 방면으로 직진<br>자하문로10길 방면으로 좌회전 후 직진<br>효자로에서 우회전 후 경복궁역 방면으로 직진<br>코오롱패션디자인학원 옆 골목으로 우회전
+
+					strong 미술관의 주차 공간이 협소하여<br>대중교통을 이용해주시면 감사하겠습니다.<br>주차장 만차 시 인근 유료주차장을 이용바랍니다.

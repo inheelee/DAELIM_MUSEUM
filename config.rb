@@ -6,8 +6,6 @@
 # Compass 플러그인 추가
 require 'compass/import-once/activate'
 require 'bourbon'
-require 'susy'
-
 # ------------------------------------------------------------------------
 # 기본 언어 인코딩 설정
 # Windows 사용자에게 주로 발생하는 오류(언어 인코딩: CP949)
@@ -25,7 +23,7 @@ http_path       = "/"
 css_dir         = "dist/css"
 sass_dir        = "src/sass"
 javascripts_dir = "src/js"
-images_dir      = "src/images"
+images_dir      = "src/image"
 fonts_dir       = "src/fonts"
 
 # ------------------------------------------------------------------------

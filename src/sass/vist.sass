@@ -1,0 +1,125 @@
+@import part/config/setting
+// @import susy-global-setting
+@import yamoo9/yamoo9
+$bl : $base-line-height
+
+body
+	margin: 0
+	color: #373737
+h2
+	font-size: 35px
+
+p
+	line-height: 1.8
+
+.banner
+	position: relative
+	overflow: hidden
+
+	li
+		float: left
+
+	li + li
+		height: 400px
+		width: 100%
+		float: left
+
+
+	.subway
+		background-image: url('../image/info_vist/bg_direct01.png')
+		background-position: top center
+	.bus
+		background-image: url('../image/info_vist/bg_direct02.png')
+		background-position: top center
+	.owncar
+		background-image: url('../image/info_vist/bg_direct03.png')
+		background-position: top center
+
+
+	.controller_list
+		position: absolute
+		top: 20px
+		left: 50px
+		> li
+			float: left
+			text-align: center
+			background-color: #fff
+			border-radius: 50%
+			width: 60px
+			height: 60px
+			line-height: 16px
+			a
+				display: inline-block
+				margin-top: 16px
+				color: #000
+		li+li
+			margin-left: 18px
+
+		.selecter
+			background-color: #000
+
+			a
+				color: #fff
+.menu
+	background-color: #000
+	height: 60px
+	text-align: center
+	li
+		margin-right: 40px
+		display: inline-block
+
+		a
+			display: inline-block
+			color: #909090
+			font-size: 16px
+			line-height: 60px
+	.first
+		margin-right: 0
+		a
+			color: #fff
+.vist_contents
+	width: 1100px
+	margin: 0 auto
+
+	.address
+		text-align: left
+		padding-bottom: 20px
+		h3 
+			position: relative
+			font-size: 40px
+			margin-top: 50px
+			font-weight: 500
+			.navermap
+				position: absolute
+				top: 0
+				right: 0
+				box-sizing: border-box
+				padding-top: 10px
+				text-align: center
+				display: block
+				font-size: 12px
+				border: 1px solid #000
+				width: 210px
+				height: 48px
+				vertical-align: middle
+				font-size: 20px
+				font-weight: 300
+		strong
+			display: block
+			font-size: 18px
+			margin-top: 20px
+			color: #000
+			font-weight: 200
+			a
+				color: #000
+		strong+strong
+			margin-top: 6px
+	.bmw
+		margin-top: 30px
+		overflow: hidden
+		li
+			float: left
+			width: 33%
+			box-sizing: border-box
+		li + li
+			padding-left: 20px

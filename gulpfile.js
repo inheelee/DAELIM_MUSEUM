@@ -8,7 +8,6 @@ var gulp = require('gulp'),
 	filter = require('gulp-filter'),
 	sourcemaps  = require('gulp-sourcemaps'),
 
-	spritesmith  = require('gulp.spritesmith'),
 	imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant'),
 	compass =require('gulp-compass'),
@@ -37,7 +36,7 @@ var config = {
 		'style'            : 'expanded', // compact, compressed, nested, expanded
 		'sourcemap'        : true,
 		'compass'          : true,
-		'require'          : ['bourbon', 'susy']
+		'require'          : ['bourbon']
 		// 'no-cache'         : true
 	},
 	'ruby_sass_sourcemaps': {
@@ -94,20 +93,9 @@ gulp.task('sass', function() {
 		.on('error', rubySass.logError)
 		.pipe( sourcemaps.write(config.ruby_sass_sourcemaps.dir, config.ruby_sass_sourcemaps.options) )
 		.pipe( gulp.dest('dist/css') )
-		.pipe( filter('**/*.css') )
+		// .pipe( filter('**/*.css') )
 		.pipe( reload({stream: true}) );
 });
-
-gulp.task('sprite', function () {
-	var spriteData = gulp
-		.src( 'image/sprite/*.png' )
-		.pipe( spritesmith({
-			imgName: 'sprite-one.png',
-			cssName: 'sprite-one.css'
-		}) )
-	return spriteData
-		.pipe( gulp.dest('dist/image') );
-})
 
 // 변경 업무: images 디렉토리 이동 및 최적화 수행
 gulp.task('image', function () {
