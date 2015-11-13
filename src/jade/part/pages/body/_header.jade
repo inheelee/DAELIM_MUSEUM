@@ -1,68 +1,103 @@
-#header
-  .header_top
-    .inner
-      .link-menu
-        a(href='') 대림미술관
-        a(href='') 디뮤지엄
-        a(href='') 구슬모아 당구장
-      #lnb
-        ul
-          li
-            a(href='') LOGIN
-          li
-            a(href='') JOIN
-          li
-            a(href='') SNS
-          li
-            a(href='') ENG
-  .gnb_header_slide
-    .set_gnb.header_slide_menu
-      #gnb
-        h1
-          a(href='')
-            img(src='image/logo_DEALIM.png', alt='daelim museum')
-        ul.show_menu
-          li
-            a(href='') VISIT
-            ul.hide_menu
+ body
+    #skip-navigation
+      p
+        a(href='#content') 메뉴 건너뛰기
+      ul
+        li
+          a(href='#header') header
+        li
+          a(href='#main') main
+        li
+          a(href='#footer') footer
+    .header
+      #top_area
+        .top_con
+          .link-menu
+            a.on(href='') 대림미술관
+            a(href='') 디뮤지엄
+            a(href='') 구슬모아 당구장
+          #lnb
+            ul
               li
-                a(href='') 관람 안내
+                a(href='') LOGIN
+              li
+                a(href='') JOIN
+              li
+                a(href='') SNS
+              li
+                a(href='') ENG
+      #gnb.gnb_area
+        .gnb
+          .set_gnb
+            h1
+              a(href='')
+                img(src='image/logo_DEALIM.png', alt='daelim museum')
+            ul.depth01
+              li.menu1
+                a(href='javascript:;') VISIT
+              li.menu2
+                a(href='javascript:;') EXHIBITION
+              li.menu3
+                a(href='javascript:;') PROGRAM
+              li.menu4
+                a(href='javascript:;') LIBRARY
+              li.menu5
+                a(href='javascript:;') NEWS
+        #gnb_over.gnb_over_area
+          .gnb_over_con
+            ul
+              li
+                a(href='') 관람안내
               li
                 a(href='') 미술관 소개
               li
                 a(href='') 오시는길
-          li
-            a(href='') EXHIBITION
-            ul.hide_menu
+            ul
               li
                 a(href='') 현재전시
               li
                 a(href='') 지난전시
-          li
-            a(href='') PROGRAM
-            ul.hide_menu
+            ul
               li
                 a(href='') D PASS
               li
                 a(href='') GOOD NIGHT
-              li
-                a(href='') 교육프로그램
+              li.depth02
+                a(href='') 교육 프로그램
                 span 하위메뉴보기
-              li
-                a(href='') 지역연계프로젝트
+                ul.depth03.first
+                  img(src='image/span.png')
+                  li
+                    a(href='') 어린이 (해피 칠드런)
+                  li
+                    a(href='') 청소년 (틴 대리머)
+                  li
+                    a(href='') 청소년 (미술관 사람들)
+                  li
+                    a(href='') 교사
+                  li
+                    a(href='') 대학생 (필드트립)
+              li.depth02
+                a(href='') 지역연계 프로젝트
                 span 하위메뉴보기
-          li
-            a(href='') LBRARY
-            ul.hide_menu
+                ul.depth03.second
+                  img(src='image/span.png')
+                  li
+                    a(href='') DA=e 데이트 프로젝트
+                  li
+                    a(href='') 통의동~통인동 프로젝트
+                  li
+                    a(href='') 2010 만안의 이미지-기록과 기억
+                  li
+                    a(href='') 해피투게더
+            ul
               li
                 a(href='') D STORY
               li
                 a(href='') D MOMENT
               li
                 a(href='') D WALLPAPER
-          li
-            a(href='') NEWS
-            ul.hide_menu
+            ul
               li
                 a(href='') 캘린더
               li
@@ -75,10 +110,8 @@
                 a(href='') 1:1 문의하기
               li
                 a(href='') 모바일앱 소개
-        .about_museum
-          a(href='')
-            img(src='image/menu_daelimmuseum.jpg', alt='')
-            p
+          .about_museum
+            a(href='')
+              img(src='image/menu_daelimmuseum.jpg', alt='')
               strong About DEALIM MUSEUM
-              br
-              | 						일상이 예술이 되는 대림미술관
+              p 일상이 예술이 되는 대림미술관

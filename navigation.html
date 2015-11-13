@@ -7,11 +7,19 @@
 	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
 </head>
 <body>
+<div id="skip-navigation">
+	<p><a href="#content">메뉴 건너뛰기</a></p>
+	<ul>
+		<li><a href="#header">header</a></li>
+		<li><a href="#main">main</a></li>
+		<li><a href="#footer">footer</a></li>
+	</ul>
+</div>
 	<div class="header">
-		<div id="header_top">
-			<div class="inner">
+		<div id="top_area">
+			<div class="top_con">
 				<div class="link-menu">
-					<a href="">대림미술관</a>
+					<a href="" class="on">대림미술관</a>
 					<a href="">디뮤지엄</a>
 					<a href="">구슬모아 당구장</a>
 				</div>
@@ -25,73 +33,79 @@
 				</div>
 			</div>
 		</div>
-	<div class="gnb_header_slide">
-		<div class="set_gnb header_slide_menu">
-			<div id="gnb">
+		<div class="gnb_area" id="gnb">
+			<div class="gnb">
+				<div class="set_gnb">
 				<h1><a href=""><img src="image/logo_DEALIM.png" alt="daelim museum"></a></h1>
-				<ul class="show_menu">
-					<li>
-						<a href="">VISIT</a>
-						<ul class="hide_menu">
-							<li><a href="">관람 안내</a></li>
-							<li><a href="">미술관 소개</a></li>
-							<li><a href="">오시는길</a></li>
-						</ul>
-					</li>
-					
-					<li>
-						<a href="">EXHIBITION</a>
-						<ul class="hide_menu">
-							<li><a href="">현재전시</a></li>
-							<li><a href="">지난전시</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="">PROGRAM</a>
-						<ul class="hide_menu">
-							<li><a href="">D PASS</a></li>
-							<li><a href="">GOOD NIGHT</a></li>
-							<li>
-								<a href="">교육프로그램</a>
-								<span>하위메뉴보기</span>
-							</li>
-							<li>
-								<a href="">지역연계프로젝트</a>
-								<span>하위메뉴보기</span>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="">LBRARY</a>
-						<ul class="hide_menu">
-							<li><a href="">D STORY</a></li>
-							<li><a href="">D MOMENT</a></li>
-							<li><a href="">D WALLPAPER</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="">NEWS</a>
-						<ul class="hide_menu">
-							<li><a href="">캘린더</a></li>
-							<li><a href="">공지사항</a></li>
-							<li><a href="">이벤트</a></li>
-							<li><a href="">FAQ</a></li>
-							<li><a href="">1:1 문의하기</a></li>
-							<li><a href="">모바일앱 소개</a></li>
-						</ul>
-					</li>
+				<ul class="depth01">
+					<li class="menu1"><a href="javascript:;">VISIT</a></li>
+					<li class="menu2"><a href="javascript:;">EXHIBITION</a></li>
+					<li class="menu3"><a href="javascript:;">PROGRAM</a></li>
+					<li class="menu4"><a href="javascript:;">LIBRARY</a></li>
+					<li class="menu5"><a href="javascript:;">NEWS</a></li>
 				</ul>
-				<div class="about_museum">
-					<a href="">
-						<img src="image/menu_daelimmuseum.jpg" alt="">
-						<p>
-						<strong>About DEALIM MUSEUM</strong><br>
-						일상이 예술이 되는 대림미술관</p>
-					</a>
 				</div>
 			</div>
+				<div class="gnb_over_area " id="gnb_over">
+							<div class="gnb_over_con">
+								<ul>
+									<li><a href="">관람안내</a></li>
+									<li><a href="">미술관 소개</a></li>
+									<li><a href="">오시는길</a></li>
+								</ul>
+								<ul>
+									<li><a href="">현재전시</a></li>
+									<li><a href="">지난전시</a></li>
+								</ul>
+								<ul>
+									<li><a href="">D PASS</a></li>
+									<li><a href="">GOOD NIGHT</a></li>
+									<li class="depth02"><a href="">교육 프로그램</a>
+										<span>하위메뉴보기</span>
+										<ul class="depth03 first">
+											<img src="image/span.png">
+											<li><a href="">어린이 (해피 칠드런)</a></li>
+											<li><a href="">청소년 (틴 대리머)</a></li>
+											<li><a href="">청소년 (미술관 사람들)</a></li>
+											<li><a href="">교사</a></li>
+											<li><a href="">대학생 (필드트립)</a></li>
+										</ul>
+									</li>
+									<li class="depth02"><a href="">지역연계 프로젝트</a>
+										<span>하위메뉴보기</span>
+										<ul class="depth03 second">
+											<img src="image/span.png">
+											<li><a href="">DA=e 데이트 프로젝트</a></li>
+											<li><a href="">통의동~통인동 프로젝트</a></li>
+											<li><a href="">2010 만안의 이미지-기록과 기억</a></li>
+											<li><a href="">해피투게더</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul>
+									<li><a href="">D STORY</a></li>
+									<li><a href="">D MOMENT</a></li>
+									<li><a href="">D WALLPAPER</a></li>
+								</ul>
+								<ul>
+									<li><a href="">캘린더</a></li>
+									<li><a href="">공지사항</a></li>
+									<li><a href="">이벤트</a></li>
+									<li><a href="">FAQ</a></li>
+									<li><a href="">1:1 문의하기</a></li>
+									<li><a href="">모바일앱 소개</a></li>
+								</ul>
+							</div>
+							<div class="about_museum">
+								<a href="">
+									<img src="image/menu_daelimmuseum.jpg" alt="">
+									<strong>About DEALIM MUSEUM</strong>
+									<p>일상이 예술이 되는 대림미술관</p>
+								</a>
+							</div>
+						</div>
+					</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="js/navigation.js"></script>
 </body>
 </html>
