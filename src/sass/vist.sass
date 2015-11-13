@@ -1,7 +1,5 @@
 @import part/config/setting
-// @import susy-global-setting
 @import yamoo9/yamoo9
-$bl : $base-line-height
 
 body
 	margin: 0
@@ -15,6 +13,7 @@ p
 .banner
 	position: relative
 	overflow: hidden
+	height: 400px
 
 	li
 		float: left
@@ -26,14 +25,11 @@ p
 
 
 	.subway
-		background-image: url('../image/info_vist/bg_direct01.png')
-		background-position: top center
+		background: url('../image/info_vist/bg_direct01.png') no-repeat top center
 	.bus
-		background-image: url('../image/info_vist/bg_direct02.png')
-		background-position: top center
+		background: url('../image/info_vist/bg_direct02.png') no-repeat top center
 	.owncar
-		background-image: url('../image/info_vist/bg_direct03.png')
-		background-position: top center
+		background: url('../image/info_vist/bg_direct03.png') no-repeat top center
 
 
 	.controller_list
@@ -121,5 +117,22 @@ p
 			float: left
 			width: 33%
 			box-sizing: border-box
+			h4
+				font-size: 22px
+				color: #000
+				margin-top: 20px
+				padding-bottom: 20px
+			strong
+				font-size: 16px
+				color: #000
+				line-height: 28px
+				display: block
+				margin-top: 15px
+				padding-bottom: 15px
+			p
+				line-height: 28px
+				font-size: 16px
+				display: block
 		li + li
 			padding-left: 20px
+

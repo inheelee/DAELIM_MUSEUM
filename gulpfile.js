@@ -63,7 +63,7 @@ var config = {
 gulp.task('default', [
 	'jade',
 	'sass',
-	// 'image',
+	'image',
 ], function() {
 	browserSync(config.browserSync)
 	gulp.start('watch');
